@@ -108,15 +108,16 @@ To make inference over the test set launch the following command:
 ```bash
 cd run
 
-config_path="../eztorch/configs/run/pretrain/sce/vit"
-config_name="vit_tiny_spatio_temporal_soccernet.yaml"
+config_path="../eztorch/configs/run/finetuning/vivit"
+config_name="vivit_tiny_soccernet_uniform"
 
 output_dir=/path/to/output/inference
-test_dir=...
-frame_dir=...
+test_dir=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps
+frame_dir=/path/to/dataset/folder/test
 labels_cache_dir_test=/path/to/cache/dir
-soccernet_labels_dir=... # Directory of ground truth labels.
+soccernet_labels_dir=/path/to/dataset/folder
 checkpoint_path=/path/to/checkpoint
+seed=42
 
 srun --kill-on-bad-exit=1 python test.py -cp $config_path -cn $config_name \
     dir.data=$test_dir \

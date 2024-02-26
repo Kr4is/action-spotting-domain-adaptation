@@ -42,7 +42,7 @@ cd eztorch
 
 fps=2
 input_folder="/path/to/dataset/folder"
-output_folder="path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/"
+output_folder="/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/"
 split=test
 
 python run/datasets/extract_soccernet.py \
@@ -60,7 +60,7 @@ We should modify the line 583 from eztorch/datasets/soccernet.py to: \
 
 ```bash
 radius_label=0.5
-dataset_json=path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test.json
+dataset_json=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test.json
 frame_dir=/path/to/dataset/folder/test
 fps=2
 cache_dir=/path/to/cache/dir # This sould do not exists the first time
@@ -71,4 +71,79 @@ python run/datasets/precompute_soccernet_labels.py \
     --path-prefix $frame_dir \
     --fps $fps \
     --cache-dir $cache_dir
+```
+
+To download the checkpoints use the following links:
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/comedian-self-supervised-learning-and/action-spotting-on-soccernet-v2)](https://paperswithcode.com/sota/action-spotting-on-soccernet-v2?p=comedian-self-supervised-learning-and)
+<table>
+<thead>
+  <tr>
+    <th style="text-align:center">Model</th>
+    <th style="text-align:center">t-AmAP on Soccernet</th>
+    <th style="text-align:center">Ckpts 🤗</th>
+    <th style="text-align:center">Ckpts Gdrive</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td align="center">ViViT Tiny</td>
+    <td align="center">70.7</td>
+    <td align="center"><a href="https://huggingface.co/juliendenize/COMEDIAN-ViViT-tiny/tree/main">files</a></td>	
+    <td align="center"><a href="https://drive.google.com/file/d/1iTTlVXXFLp9QzxlccfT2i44BMvuOyYgq/view?usp=drive_link">seed42</a> <a href="https://drive.google.com/file/d/1zfryhsRtJchJNfPRiA-u-r5CYc-j1_ub/view?usp=drive_link">seed203</a> <a href="https://drive.google.com/file/d/1qpNlU_-J42l0_53YN0xRCzfR6aN8BxWd/view?usp=drive_link">seed666</a></td>
+  </tr>
+  <tr>
+    <td align="center">ViSwin Tiny</td>
+    <td align="center">71.6</td>
+    <td align="center"><a href="https://huggingface.co/juliendenize/COMEDIAN-ViSwin-tiny/tree/main">files</a></td>	
+    <td align="center"><a href="https://drive.google.com/file/d/1zDVUKq8nRd5hVZIm49Ity-8GnLTa7DOh/view?usp=drive_link">seed42</a> <a href="https://drive.google.com/file/d/1QD52pB60d9u82urs6ZSVwRIpNTliv9pR/view?usp=drive_link">seed203</a> <a href="https://drive.google.com/file/d/11BGiR-yeJUJmY6FfobaRwa-3t_Ps4CdN/view?usp=drive_link">seed666</a></td>
+  </tr>
+</tbody>
+</table>
+
+### Testing
+
+To make inference over the test set launch the following command:
+
+```bash
+cd run
+
+config_path="../eztorch/configs/run/pretrain/sce/vit"
+config_name="vit_tiny_spatio_temporal_soccernet.yaml"
+
+output_dir=/path/to/output/inference
+test_dir=...
+frame_dir=...
+labels_cache_dir_test=/path/to/cache/dir
+soccernet_labels_dir=... # Directory of ground truth labels.
+checkpoint_path=/path/to/checkpoint
+
+srun --kill-on-bad-exit=1 python test.py -cp $config_path -cn $config_name \
+    dir.data=$test_dir \
+    dir.root=$output_dir \
+    dir.exp="test/" \
+    seed.seed=$seed \
+    datamodule.train=null \
+    datamodule.val=null \
+    datamodule.test.dataset.task=action \
+    datamodule.test.dataset.datadir=$test_dir \
+    datamodule.test.dataset.video_path_prefix=$frame_dir \
+    datamodule.test.dataset.label_args.cache_dir=$labels_cache_dir_test \
+    datamodule.test.dataset.label_args.radius_label=0.5 \
+    datamodule.test.loader.num_workers=4 \
+    datamodule.test.global_batch_size=64 \
+    model.optimizer.batch_size=2 \
+    model.evaluation_args.SoccerNet_path=$soccernet_labels_dir \
+    model.evaluation_args.split="test" \
+    model.trunk.transformer.temporal_depth=6 \
+    model.save_test_preds_path="test_preds/" \
+    model.prediction_args.remove_inference_prediction_seconds=12 \
+    model.prediction_args.merge_predictions_type="max" \
+    model.NMS_args.nms_type=soft \
+    model.NMS_args.window=20 \
+    model.NMS_args.threshold=0.001 \
+    model.train_transform=null \
+    model.val_transform=null \
+    model.pretrained_path=$checkpoint_path \
+    ++test.ckpt_path=null
 ```

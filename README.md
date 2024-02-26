@@ -61,7 +61,7 @@ We should modify the line 583 from eztorch/datasets/soccernet.py to: \
 ```bash
 radius_label=0.5
 dataset_json=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test.json
-frame_dir=/path/to/dataset/folder/test
+frame_dir=/path/to/dataset/folder
 fps=2
 cache_dir=/path/to/cache/dir # This sould do not exists the first time
 
@@ -112,8 +112,8 @@ config_path="../eztorch/configs/run/finetuning/vivit"
 config_name="vivit_tiny_soccernet_uniform"
 
 output_dir=/path/to/output/inference
-test_dir=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps
-frame_dir=/path/to/dataset/folder/test
+test_dir=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test.json
+frame_dir=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test
 labels_cache_dir_test=/path/to/cache/dir
 soccernet_labels_dir=/path/to/dataset/folder
 checkpoint_path=/path/to/checkpoint

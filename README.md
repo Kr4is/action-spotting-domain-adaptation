@@ -35,7 +35,7 @@ If you neeed to install ffmpeg and you do not have sudo privilegies you could do
 
 ### Dataset preparation
 
-To generate the dataset launch the following command:
+To extract frames from the dataset launch the following command:
 
 ```bash
 cd eztorch
@@ -50,4 +50,25 @@ python run/datasets/extract_soccernet.py \
     --output-folder $output_folder \
     --fps $fps \
     --split $split
+```
+
+To precompute labels from extracted frames launch the following command:
+
+> **NOTE**
+We should modify the line 583 from eztorch/datasets/soccernet.py to: \
+        return [labels.permute(1, 0)] # Note the list enclosure
+
+```bash
+radius_label=0.5
+dataset_json=path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test.json
+frame_dir=/path/to/dataset/folder/test
+fps=2
+cache_dir=/path/to/cache/dir # This sould do not exists the first time
+
+python run/datasets/precompute_soccernet_labels.py \
+    --radius-label $radius_label \
+    --data-path $dataset_json \
+    --path-prefix $frame_dir \
+    --fps $fps \
+    --cache-dir $cache_dir
 ```

@@ -79,27 +79,102 @@ python run/datasets/precompute_soccernet_labels.py \
 To download the checkpoints use the following links:
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/comedian-self-supervised-learning-and/action-spotting-on-soccernet-v2)](https://paperswithcode.com/sota/action-spotting-on-soccernet-v2?p=comedian-self-supervised-learning-and)
-<table>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
 <thead>
   <tr>
-    <th style="text-align:center">Model</th>
-    <th style="text-align:center">t-AmAP on Soccernet</th>
-    <th style="text-align:center">Ckpts 🤗</th>
-    <th style="text-align:center">Ckpts Gdrive</th>
+    <th class="tg-0pky" rowspan="2">Models</th>
+    <th class="tg-0pky" rowspan="2">Ckpts 🤗</th>
+    <th class="tg-0pky" rowspan="2">Ckpts Gdrive</th>
+    <th class="tg-0pky">Soccernet</th>
+    <th class="tg-c3ow" colspan="7">Own</th>
+  </tr>
+  <tr>
+    <th class="tg-0pky">t-AmAP</th>
+    <th class="tg-0pky">t-AmAP</th>
+    <th class="tg-0pky">at1-AmAP</th>
+    <th class="tg-0pky">at2-AmAP</th>
+    <th class="tg-0pky">at3-AmAP</th>
+    <th class="tg-0pky">at4-AmAP</th>
+    <th class="tg-0pky">at5-AmAP</th>
+    <th class="tg-0pky">loose-AmAP</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td align="center">ViViT Tiny</td>
-    <td align="center">70.7</td>
-    <td align="center"><a href="https://huggingface.co/juliendenize/COMEDIAN-ViViT-tiny/tree/main">files</a></td>	
-    <td align="center"><a href="https://drive.google.com/file/d/1iTTlVXXFLp9QzxlccfT2i44BMvuOyYgq/view?usp=drive_link">seed42</a> <a href="https://drive.google.com/file/d/1zfryhsRtJchJNfPRiA-u-r5CYc-j1_ub/view?usp=drive_link">seed203</a> <a href="https://drive.google.com/file/d/1qpNlU_-J42l0_53YN0xRCzfR6aN8BxWd/view?usp=drive_link">seed666</a></td>
+    <td class="tg-c3ow" rowspan="3">ViViT Tiny</td>
+    <td class="tg-c3ow" rowspan="3"><a href="https://huggingface.co/juliendenize/COMEDIAN-ViViT-tiny/tree/main" target="_blank" rel="noopener noreferrer">files</a></td>
+    <td class="tg-0pky"><a href="https://drive.google.com/file/d/1iTTlVXXFLp9QzxlccfT2i44BMvuOyYgq/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed42</a></td>
+    <td class="tg-c3ow" rowspan="3">70.7</td>
+    <td class="tg-0pky">16.93</td>
+    <td class="tg-0pky">11.06</td>
+    <td class="tg-0pky">15.46</td>
+    <td class="tg-0pky">17.57</td>
+    <td class="tg-0pky">18.72</td>
+    <td class="tg-0pky">20.84</td>
+    <td class="tg-0pky">26.13</td>
   </tr>
   <tr>
-    <td align="center">ViSwin Tiny</td>
-    <td align="center">71.6</td>
-    <td align="center"><a href="https://huggingface.co/juliendenize/COMEDIAN-ViSwin-tiny/tree/main">files</a></td>	
-    <td align="center"><a href="https://drive.google.com/file/d/1zDVUKq8nRd5hVZIm49Ity-8GnLTa7DOh/view?usp=drive_link">seed42</a> <a href="https://drive.google.com/file/d/1QD52pB60d9u82urs6ZSVwRIpNTliv9pR/view?usp=drive_link">seed203</a> <a href="https://drive.google.com/file/d/11BGiR-yeJUJmY6FfobaRwa-3t_Ps4CdN/view?usp=drive_link">seed666</a></td>
+    <td class="tg-0pky"><a href="https://drive.google.com/file/d/1zfryhsRtJchJNfPRiA-u-r5CYc-j1_ub/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed203</a></td>
+    <td class="tg-0pky">17.96</td>
+    <td class="tg-0pky">11.77</td>
+    <td class="tg-0pky">16.33</td>
+    <td class="tg-0pky">17.95</td>
+    <td class="tg-0pky">20.37</td>
+    <td class="tg-0pky">22.60</td>
+    <td class="tg-0pky">27.82</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><a href="https://drive.google.com/file/d/1qpNlU_-J42l0_53YN0xRCzfR6aN8BxWd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed666</a></td>
+    <td class="tg-0pky">15.71</td>
+    <td class="tg-0pky">10.96</td>
+    <td class="tg-0pky">14.53</td>
+    <td class="tg-0pky">16.48</td>
+    <td class="tg-0pky">16.91</td>
+    <td class="tg-0pky">18.94</td>
+    <td class="tg-0pky">24.91</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" rowspan="3">ViSwin Tiny</td>
+    <td class="tg-c3ow" rowspan="3"><a href="https://huggingface.co/juliendenize/COMEDIAN-ViSwin-tiny/tree/main" target="_blank" rel="noopener noreferrer">files</a></td>
+    <td class="tg-0pky"><a href="https://drive.google.com/file/d/1zDVUKq8nRd5hVZIm49Ity-8GnLTa7DOh/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed42</a></td>
+    <td class="tg-c3ow" rowspan="3">71.6</td>
+    <td class="tg-0pky">21.32</td>
+    <td class="tg-0pky">16.13</td>
+    <td class="tg-0pky">19.68</td>
+    <td class="tg-0pky">22.39</td>
+    <td class="tg-0pky">22.98</td>
+    <td class="tg-0pky">24.37</td>
+    <td class="tg-0pky">27.74</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><a href="https://drive.google.com/file/d/1QD52pB60d9u82urs6ZSVwRIpNTliv9pR/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed203</a></td>
+    <td class="tg-0pky">21.31</td>
+    <td class="tg-0pky">16.08</td>
+    <td class="tg-0pky">20.53</td>
+    <td class="tg-0pky">21.96</td>
+    <td class="tg-0pky">22.59</td>
+    <td class="tg-0pky">24.21</td>
+    <td class="tg-0pky">27.26</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><a href="https://drive.google.com/file/d/11BGiR-yeJUJmY6FfobaRwa-3t_Ps4CdN/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed666</a></td>
+    <td class="tg-0pky">22.04</td>
+    <td class="tg-0pky">17.35</td>
+    <td class="tg-0pky">21.09</td>
+    <td class="tg-0pky">22.49</td>
+    <td class="tg-0pky">23.33</td>
+    <td class="tg-0pky">25.15</td>
+    <td class="tg-0pky">28.76</td>
   </tr>
 </tbody>
 </table>

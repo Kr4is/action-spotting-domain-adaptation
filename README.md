@@ -80,92 +80,118 @@ To download the checkpoints use the following links:
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/comedian-self-supervised-learning-and/action-spotting-on-soccernet-v2)](https://paperswithcode.com/sota/action-spotting-on-soccernet-v2?p=comedian-self-supervised-learning-and)
 
-<table class="tg">
+<table>
 <thead>
   <tr>
-    <th class="tg-0pky" rowspan="2">Models</th>
-    <th class="tg-0pky" rowspan="2">Ckpts 🤗</th>
-    <th class="tg-0pky" rowspan="2">Ckpts Gdrive</th>
-    <th class="tg-0pky">Soccernet</th>
-    <th class="tg-c3ow" colspan="7">Own</th>
+    <th rowspan="2">Models</th>
+    <th rowspan="2">Ckpts 🤗</th>
+    <th rowspan="2">Ckpts Gdrive</th>
+    <th>Soccernet</th>
+    <th colspan="7">Own</th>
   </tr>
   <tr>
-    <th class="tg-0pky">t-AmAP</th>
-    <th class="tg-0pky">t-AmAP</th>
-    <th class="tg-0pky">at1-AmAP</th>
-    <th class="tg-0pky">at2-AmAP</th>
-    <th class="tg-0pky">at3-AmAP</th>
-    <th class="tg-0pky">at4-AmAP</th>
-    <th class="tg-0pky">at5-AmAP</th>
-    <th class="tg-0pky">loose-AmAP</th>
+    <th>t-AmAP</th>
+    <th>t-AmAP</th>
+    <th>at1-AmAP</th>
+    <th>at2-AmAP</th>
+    <th>at3-AmAP</th>
+    <th>at4-AmAP</th>
+    <th>at5-AmAP</th>
+    <th>loose-AmAP</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-c3ow" rowspan="3">ViViT Tiny</td>
-    <td class="tg-c3ow" rowspan="3"><a href="https://huggingface.co/juliendenize/COMEDIAN-ViViT-tiny/tree/main" target="_blank" rel="noopener noreferrer">files</a></td>
-    <td class="tg-0pky"><a href="https://drive.google.com/file/d/1iTTlVXXFLp9QzxlccfT2i44BMvuOyYgq/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed42</a></td>
-    <td class="tg-c3ow" rowspan="3">70.7</td>
-    <td class="tg-0pky">16.93</td>
-    <td class="tg-0pky">11.06</td>
-    <td class="tg-0pky">15.46</td>
-    <td class="tg-0pky">17.57</td>
-    <td class="tg-0pky">18.72</td>
-    <td class="tg-0pky">20.84</td>
-    <td class="tg-0pky">26.13</td>
+    <td rowspan="3">ViViT Tiny</td>
+    <td rowspan="3"><a href="https://huggingface.co/juliendenize/COMEDIAN-ViViT-tiny/tree/main" target="_blank" rel="noopener noreferrer">files</a></td>
+    <td><a href="https://drive.google.com/file/d/1iTTlVXXFLp9QzxlccfT2i44BMvuOyYgq/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed42</a></td>
+    <td rowspan="3">70.7</td>
+    <td>16.93</td>
+    <td>11.06</td>
+    <td>15.46</td>
+    <td>17.57</td>
+    <td>18.72</td>
+    <td>20.84</td>
+    <td>26.13</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://drive.google.com/file/d/1zfryhsRtJchJNfPRiA-u-r5CYc-j1_ub/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed203</a></td>
-    <td class="tg-0pky">17.96</td>
-    <td class="tg-0pky">11.77</td>
-    <td class="tg-0pky">16.33</td>
-    <td class="tg-0pky">17.95</td>
-    <td class="tg-0pky">20.37</td>
-    <td class="tg-0pky">22.60</td>
-    <td class="tg-0pky">27.82</td>
+    <td><a href="https://drive.google.com/file/d/1zfryhsRtJchJNfPRiA-u-r5CYc-j1_ub/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed203</a></td>
+    <td>17.96</td>
+    <td>11.77</td>
+    <td>16.33</td>
+    <td>17.95</td>
+    <td>20.37</td>
+    <td>22.60</td>
+    <td>27.82</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://drive.google.com/file/d/1qpNlU_-J42l0_53YN0xRCzfR6aN8BxWd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed666</a></td>
-    <td class="tg-0pky">15.71</td>
-    <td class="tg-0pky">10.96</td>
-    <td class="tg-0pky">14.53</td>
-    <td class="tg-0pky">16.48</td>
-    <td class="tg-0pky">16.91</td>
-    <td class="tg-0pky">18.94</td>
-    <td class="tg-0pky">24.91</td>
+    <td><a href="https://drive.google.com/file/d/1qpNlU_-J42l0_53YN0xRCzfR6aN8BxWd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed666</a></td>
+    <td>15.71</td>
+    <td>10.96</td>
+    <td>14.53</td>
+    <td>16.48</td>
+    <td>16.91</td>
+    <td>18.94</td>
+    <td>24.91</td>
   </tr>
   <tr>
-    <td class="tg-c3ow" rowspan="3">ViSwin Tiny</td>
-    <td class="tg-c3ow" rowspan="3"><a href="https://huggingface.co/juliendenize/COMEDIAN-ViSwin-tiny/tree/main" target="_blank" rel="noopener noreferrer">files</a></td>
-    <td class="tg-0pky"><a href="https://drive.google.com/file/d/1zDVUKq8nRd5hVZIm49Ity-8GnLTa7DOh/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed42</a></td>
-    <td class="tg-c3ow" rowspan="3">71.6</td>
-    <td class="tg-0pky">21.32</td>
-    <td class="tg-0pky">16.13</td>
-    <td class="tg-0pky">19.68</td>
-    <td class="tg-0pky">22.39</td>
-    <td class="tg-0pky">22.98</td>
-    <td class="tg-0pky">24.37</td>
-    <td class="tg-0pky">27.74</td>
+    <td rowspan="3">ViSwin Tiny</td>
+    <td rowspan="3"><a href="https://huggingface.co/juliendenize/COMEDIAN-ViSwin-tiny/tree/main" target="_blank" rel="noopener noreferrer">files</a></td>
+    <td><a href="https://drive.google.com/file/d/1zDVUKq8nRd5hVZIm49Ity-8GnLTa7DOh/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed42</a></td>
+    <td rowspan="3">71.6</td>
+    <td>21.32</td>
+    <td>16.13</td>
+    <td>19.68</td>
+    <td>22.39</td>
+    <td>22.98</td>
+    <td>24.37</td>
+    <td>27.74</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://drive.google.com/file/d/1QD52pB60d9u82urs6ZSVwRIpNTliv9pR/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed203</a></td>
-    <td class="tg-0pky">21.31</td>
-    <td class="tg-0pky">16.08</td>
-    <td class="tg-0pky">20.53</td>
-    <td class="tg-0pky">21.96</td>
-    <td class="tg-0pky">22.59</td>
-    <td class="tg-0pky">24.21</td>
-    <td class="tg-0pky">27.26</td>
+    <td><a href="https://drive.google.com/file/d/1QD52pB60d9u82urs6ZSVwRIpNTliv9pR/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed203</a></td>
+    <td>21.31</td>
+    <td>16.08</td>
+    <td>20.53</td>
+    <td>21.96</td>
+    <td>22.59</td>
+    <td>24.21</td>
+    <td>27.26</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://drive.google.com/file/d/11BGiR-yeJUJmY6FfobaRwa-3t_Ps4CdN/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed666</a></td>
-    <td class="tg-0pky">22.04</td>
-    <td class="tg-0pky">17.35</td>
-    <td class="tg-0pky">21.09</td>
-    <td class="tg-0pky">22.49</td>
-    <td class="tg-0pky">23.33</td>
-    <td class="tg-0pky">25.15</td>
-    <td class="tg-0pky">28.76</td>
+    <td><a href="https://drive.google.com/file/d/11BGiR-yeJUJmY6FfobaRwa-3t_Ps4CdN/view?usp=drive_link" target="_blank" rel="noopener noreferrer">seed666</a></td>
+    <td>22.04</td>
+    <td>17.35</td>
+    <td>21.09</td>
+    <td>22.49</td>
+    <td>23.33</td>
+    <td>25.15</td>
+    <td>28.76</td>
+  </tr>
+  <tr>
+    <td>ViVit Tiny ensemble</td>
+    <td>-</td>
+    <td>-</td>
+    <td>72.0</td>
+    <td>22.10</td>
+    <td>17.57</td>
+    <td>21.21</td>
+    <td>22.66</td>
+    <td>23.28</td>
+    <td>24.93</td>
+    <td>28.60</td>
+  </tr>
+  <tr>
+    <td>ViSwin Tiny</td>
+    <td>-</td>
+    <td>-</td>
+    <td>73.1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </tbody>
 </table>
@@ -177,17 +203,18 @@ To make inference over the test set launch the following command:
 ```bash
 cd run
 
+seed=42
+
 config_path="../eztorch/configs/run/finetuning/vivit"
 config_name="vivit_tiny_soccernet_uniform"
+checkpoint_path=/path/to/checkpoint_seed${seed}.pth
 
 fps=2
-output_dir=/path/to/output/inference
+output_dir=/path/to/output/inference/vivit/seed_${seed}
 test_dir=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test.json
 frame_dir=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test
 labels_cache_dir_test=/path/to/cache/dir
 soccernet_labels_dir=/path/to/dataset/folder/test
-checkpoint_path=/path/to/checkpoint.pth
-seed=42
 
 srun --kill-on-bad-exit=1 python test.py -cp $config_path -cn $config_name \
     dir.data=$test_dir \
@@ -217,4 +244,24 @@ srun --kill-on-bad-exit=1 python test.py -cp $config_path -cn $config_name \
     model.val_transform=null \
     model.pretrained_path=$checkpoint_path \
     ++test.ckpt_path=null
+```
+
+### Merge Predictions
+
+To several raw predictions launch the following command:
+
+```bash
+fps=2
+dataset_path=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test.json
+saved_features_raw_path="/path/to/output/inference/vivit/seed_42/test/test_preds_raw.zip /path/to/output/inference/vivit/seed_203test_preds_raw.zip /path/to/output/inference/vivit/seed_666/test_preds_raw.zip"
+output_folder=path/to/output/inference/vivit/merged
+kind_merge="average"
+
+srun --kill-on-bad-exit=1 python merge_soccernet_predictions.py \
+    --predictions-path $saved_features_raw_path \
+    --dataset-path=$dataset_path \
+    --output-folder=$output_folder \
+    --fps=$fps \
+    --kind-merge=$kind_merge \
+    --task "action"
 ```

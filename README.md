@@ -27,8 +27,15 @@ pip uninstall -y pillow
 CC="cc -mavx2" pip install -U --force-reinstall pillow-simd
 ```
 
+Apply the eztorch patch:
+
+```bash
+git apply /path/to/eztorch.patch
+```
+
 > **NOTE**
-If you neeed to install ffmpeg and you do not have sudo privilegies you could do the following:
+Ffmpeg is needed for the dataset preparation steps.\
+If you neeed to install ffmpeg and you do not have sudo privilegies you could do the following:\
 1 - Get the ffmpeg binaries from [this webpage](https://johnvansickle.com/ffmpeg/).\
 2 - Add the binaries to you path:\
 `export PATH="$PATH:/path/to/ffmpeg-6.1-amd64-static"`
@@ -54,15 +61,11 @@ python run/datasets/extract_soccernet.py \
 
 To precompute labels from extracted frames launch the following command:
 
-> **NOTE**
-We should modify the line 583 from eztorch/datasets/soccernet.py to: \
-        return [labels.permute(1, 0)] # Note the list enclosure
-
 ```bash
 radius_label=0.5
+fps=2
 dataset_json=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test.json
 frame_dir=/path/to/dataset/folder
-fps=2
 cache_dir=/path/to/cache/dir # This sould do not exists the first time
 
 python run/datasets/precompute_soccernet_labels.py \
@@ -111,12 +114,13 @@ cd run
 config_path="../eztorch/configs/run/finetuning/vivit"
 config_name="vivit_tiny_soccernet_uniform"
 
+fps=2
 output_dir=/path/to/output/inference
 test_dir=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test.json
 frame_dir=/path/to/soccernet_domain_adaptation_as_extracted_${fps}fps/test
 labels_cache_dir_test=/path/to/cache/dir
-soccernet_labels_dir=/path/to/dataset/folder
-checkpoint_path=/path/to/checkpoint
+soccernet_labels_dir=/path/to/dataset/folder/test
+checkpoint_path=/path/to/checkpoint.pth
 seed=42
 
 srun --kill-on-bad-exit=1 python test.py -cp $config_path -cn $config_name \

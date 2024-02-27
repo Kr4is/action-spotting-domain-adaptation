@@ -1,0 +1,71 @@
+diff --git a/eztorch/datasets/soccernet.py b/eztorch/datasets/soccernet.py
+index d4a80f7..435f4ab 100644
+--- a/eztorch/datasets/soccernet.py
++++ b/eztorch/datasets/soccernet.py
+@@ -577,7 +577,7 @@ def _get_labels(
+         for label in range(num_labels):
+             if label in timestamp_label_annotations:
+                 labels[label, idx_timestamp] = 1
+-        return labels.permute(1, 0)
++        return [labels.permute(1, 0)]
+ 
+ 
+ class ImageSoccerNet(SoccerNet):
+diff --git a/eztorch/models/soccernet_spotting.py b/eztorch/models/soccernet_spotting.py
+index 13771ca..08d6379 100644
+--- a/eztorch/models/soccernet_spotting.py
++++ b/eztorch/models/soccernet_spotting.py
+@@ -8,6 +8,7 @@ import torch.distributed as dist
+ from lightning.pytorch.utilities import rank_zero_info
+ from omegaconf import DictConfig
+ from SoccerNet.Evaluation.ActionSpotting import evaluate
++from SoccerNet.Evaluation.utils import EVENT_DICTIONARY_V2
+ from torch import Tensor, nn
+ from torch.nn import Parameter
+ 
+@@ -510,7 +511,7 @@ class SoccerNetSpottingModel(EztorchBaseModule):
+             return
+ 
+         if task == SoccerNetTask.ACTION:
+-            dataset = "SoccerNet"
++            dataset = None
+             eval_task = "spotting"
+             num_classes = 17
+             label_files = "Labels-v2.json"
+@@ -540,6 +541,7 @@ class SoccerNetSpottingModel(EztorchBaseModule):
+                     num_classes=num_classes,
+                     framerate=framerate,
+                     metric=metric,
++                    EVENT_DICTIONARY=EVENT_DICTIONARY_V2,
+                     **self.evaluation_args,
+                 )
+ 
+diff --git a/run/evaluation_action_spotting.py b/run/evaluation_action_spotting.py
+index 6f11c2b..5cbc154 100644
+--- a/run/evaluation_action_spotting.py
++++ b/run/evaluation_action_spotting.py
+@@ -4,6 +4,7 @@ from pathlib import Path
+ import torch
+ from lightning.pytorch.utilities import rank_zero_info
+ from SoccerNet.Evaluation.ActionSpotting import evaluate
++from SoccerNet.Evaluation.utils import EVENT_DICTIONARY_V2
+ 
+ from eztorch.datasets.soccernet import soccernet_dataset
+ from eztorch.datasets.soccernet_utils.parse_utils import (
+@@ -163,7 +164,7 @@ if __name__ == "__main__":
+         )
+ 
+     if args.task == SoccerNetTask.ACTION:
+-        dataset = "SoccerNet"
++        dataset = None
+         eval_task = "spotting"
+         num_classes = 17
+         label_files = "Labels-v2.json"
+@@ -192,6 +193,7 @@ if __name__ == "__main__":
+             metric=metric,
+             dataset=dataset,
+             task=eval_task,
++            EVENT_DICTIONARY=EVENT_DICTIONARY_V2
+         )
+ 
+         rank_zero_info(

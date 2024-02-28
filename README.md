@@ -181,17 +181,17 @@ To download the checkpoints use the following links:
     <td>28.60</td>
   </tr>
   <tr>
-    <td>ViSwin Tiny</td>
+    <td>ViSwin Tiny ensemble</td>
     <td>-</td>
     <td>-</td>
     <td>73.1</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>18.48</td>
+    <td>12.44</td>
+    <td>16.83</td>
+    <td>18.51</td>
+    <td>20.76</td>
+    <td>23.18</td>
+    <td>28.47</td>
   </tr>
 </tbody>
 </table>

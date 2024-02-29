@@ -1,5 +1,61 @@
 # Spot
 
+## Results
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="3"><br><br>Models</th>
+    <th colspan="7">Datasets</th>
+  </tr>
+  <tr>
+    <th>Soccernet</th>
+    <th colspan="6">Domain Adaptation</th>
+  </tr>
+  <tr>
+    <th>t-AmAP</th>
+    <th>t-AmAP</th>
+    <th>loose-AmAP</th>
+    <th>at0-AmAP</th>
+    <th>at1-AmAP</th>
+    <th>at2-AmAP</th>
+    <th>at4-AmAP</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>rny002gsm_gru</td>
+    <td>63.28</td>
+    <td>13.33</td>
+    <td>19.71</td>
+    <td>4.56</td>
+    <td>10.57</td>
+    <td>14.27</td>
+    <td>16.24</td>
+  </tr>
+  <tr>
+    <td>rny008gsm_gru</td>
+    <td>66.01</td>
+    <td>14.48</td>
+    <td>20.76</td>
+    <td>5.31</td>
+    <td>13.35</td>
+    <td>15.51</td>
+    <td>17.37</td>
+  </tr>
+  <tr>
+    <td>Challenge<br>rny002gsm_gru<br></td>
+    <td>66.73</td>
+    <td>18.96</td>
+    <td>26.66</td>
+    <td>8.44</td>
+    <td>19.78</td>
+    <td>21.81</td>
+    <td>23.29</td>
+  </tr>
+</tbody>
+</table>
+
 ## Installation
 
 Download the spot repository:

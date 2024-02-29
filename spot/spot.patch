@@ -1,0 +1,96 @@
+diff --git a/dataset/frame.py b/dataset/frame.py
+index d927a57..efc482f 100644
+--- a/dataset/frame.py
++++ b/dataset/frame.py
+@@ -512,7 +512,7 @@ class ActionSpotVideoDataset(Dataset):
+         num_labels = num_frames // self._stride
+         if num_frames % self._stride != 0:
+             num_labels += 1
+-        labels = np.zeros(num_labels, np.int)
++        labels = np.zeros(num_labels, int)
+         for event in meta['events']:
+             frame = event['frame']
+             if frame < num_frames:
+diff --git a/eval_soccernetv2.py b/eval_soccernetv2.py
+index 442936b..281aeb6 100755
+--- a/eval_soccernetv2.py
++++ b/eval_soccernetv2.py
+@@ -14,7 +14,7 @@ from eval_ensemble import ensemble
+ 
+ from SoccerNet.Evaluation.ActionSpotting import evaluate as sn_evaluate
+ from SoccerNet.Evaluation.utils import INVERSE_EVENT_DICTIONARY_V2
+-
++from SoccerNet.Evaluation.utils import EVENT_DICTIONARY_V2
+ 
+ def get_args():
+     parser = argparse.ArgumentParser()
+@@ -107,8 +107,8 @@ def main(pred_file, split, soccernet_path, nms_window, eval_dir):
+ 
+     def eval_wrapper(metric):
+         results = sn_evaluate(
+-            SoccerNet_path=soccernet_path, Predictions_path=eval_dir,
+-            split=split_name, version=2, metric=metric)
++            SoccerNet_path=soccernet_path, dataset = None, Predictions_path=eval_dir,
++            split=split_name, version=2, metric=metric, EVENT_DICTIONARY=EVENT_DICTIONARY_V2)
+ 
+         rows = []
+         for i in range(len(results['a_mAP_per_class'])):
+diff --git a/model/shift.py b/model/shift.py
+index 182517f..46944b8 100644
+--- a/model/shift.py
++++ b/model/shift.py
+@@ -16,7 +16,7 @@ class GatedShift(nn.Module):
+             channels = net.conv1.in_channels
+         elif isinstance(net, torchvision.ops.misc.ConvNormActivation):
+             channels = net[0].in_channels
+-        elif isinstance(net, timm.models.layers.conv_bn_act.ConvBnAct):
++        elif isinstance(net, timm.layers.conv_bn_act.ConvBnAct):
+             channels = net.conv.in_channels
+         elif isinstance(net, nn.Conv2d):
+             channels = net.in_channels
+diff --git a/parse_soccernet.py b/parse_soccernet.py
+index 5684d0f..2bcbcbc 100755
+--- a/parse_soccernet.py
++++ b/parse_soccernet.py
+@@ -11,6 +11,16 @@ from util.io import load_json
+ from util.dataset import read_fps, get_num_frames
+ 
+ 
++def inferListGame(SoccerNet_path):
++ 
++    list_games = []
++    for root, dirs, files in os.walk(SoccerNet_path):
++        for file in files:
++            if file.endswith(".json"):
++                list_games.append(os.path.relpath(root, SoccerNet_path))
++    print(list_games)
++    return list_games
++
+ def get_args():
+     parser = argparse.ArgumentParser()
+     parser.add_argument('label_dir', type=str,
+@@ -21,13 +31,9 @@ def get_args():
+                         help='Path to output parsed dataset')
+     return parser.parse_args()
+ 
+-
+-def load_split(split):
+-    if split == 'val':
+-        split = 'valid'
+-
++def load_split(SoccerNet_path):
+     videos = []
+-    for entry in getListGames(split):
++    for entry in inferListGame(SoccerNet_path):
+         league, season, game = entry.split('/')
+         videos.append((league, season, game))
+     return videos
+@@ -40,7 +46,7 @@ def get_label_names(labels):
+ def main(label_dir, frame_dir, out_dir):
+     labels_by_split = defaultdict(list)
+     for split in ['train', 'val', 'test', 'challenge']:
+-        videos = load_split(split)
++        videos = load_split(label_dir)
+         for video in videos:
+             league, season, game = video
+ 

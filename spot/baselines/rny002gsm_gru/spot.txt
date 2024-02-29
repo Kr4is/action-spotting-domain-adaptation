@@ -1,0 +1,39 @@
+=== Results on test (w/o NMS) ===
+AP @ tol                0      1      2      4
+------------------  -----  -----  -----  -----
+Ball out of play    12.94  20.19  22.73  25.66
+Clearance            0.93   2.17   3.08   9.13
+Corner               8.00   8.23   8.23   9.37
+Direct free-kick     1.23   1.23   1.23   1.23
+Foul                14.69  20.90  21.21  22.55
+Goal                 0.00   0.00   0.00   0.00
+Indirect free-kick   1.69   4.78   4.86   5.34
+Kick-off            17.75  50.04  63.99  63.99
+Offside              0.00   0.00   0.00   0.00
+Shots off target     0.00   0.00   0.00   0.00
+Shots on target      0.00   0.00   1.01   1.01
+Substitution         0.32   0.51   0.66   0.79
+Throw-in            29.48  36.19  39.82  44.78
+Yellow card          0.00   0.00   0.00   0.00
+mAP                  6.22  10.30  11.92  13.13
+Avg mAP (across tolerances): 10.39
+
+=== Results on test (w/ NMS) ===
+AP @ tol                0      1      2      4
+------------------  -----  -----  -----  -----
+Ball out of play     9.01  21.09  28.73  34.99
+Clearance            0.65   2.10   3.74  10.96
+Corner               7.69   8.78   8.78  10.26
+Direct free-kick     1.85   1.85   1.85   1.85
+Foul                12.35  23.53  26.20  28.34
+Goal                 0.00   0.00   0.00   0.00
+Indirect free-kick   1.54   5.29   5.33   6.37
+Kick-off             3.35  47.11  80.75  80.75
+Offside              0.00   0.00   0.00   0.00
+Shots off target     0.00   0.00   0.00   0.00
+Shots on target      0.00   0.00   1.39   1.39
+Substitution         0.22   1.16   1.34   1.91
+Throw-in            27.19  37.14  41.70  50.51
+Yellow card          0.00   0.00   0.00   0.00
+mAP                  4.56  10.57  14.27  16.24
+Avg mAP (across tolerances): 11.41

@@ -61,6 +61,12 @@
     <td>11.51</td>
     <td>1.55</td>
   </tr>
+  <tr>
+    <td>CALF</td>
+    <td>-<br></td>
+    <td>14.10</td>
+    <td>0.39</td>
+  </tr>
 </tbody>
 </table>
 

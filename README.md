@@ -2,6 +2,62 @@
 
 ## Baseline Results
 
+<table>
+<thead>
+  <tr>
+    <th rowspan="3">Work</th>
+    <th rowspan="3">Models</th>
+    <th colspan="2">Datasets</th>
+  </tr>
+  <tr>
+    <th>Soccernet</th>
+    <th>Domain Adaptation</th>
+  </tr>
+  <tr>
+    <th colspan="2">Tight Average mAP</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="3">Spot</td>
+    <td>rny002gsm_gru</td>
+    <td>63.28</td>
+    <td>13.33</td>
+  </tr>
+  <tr>
+    <td>rny008gsm_gru</td>
+    <td>66.01</td>
+    <td>14.48</td>
+  </tr>
+  <tr>
+    <td>Challenge<br>rny002gsm_gru<br></td>
+    <td>66.73</td>
+    <td>18.96</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Comedian</td>
+    <td>ViViT Tiny</td>
+    <td>70.7</td>
+    <td>17.96</td>
+  </tr>
+  <tr>
+    <td>ViSwin Tiny</td>
+    <td>71.6</td>
+    <td>22.04</td>
+  </tr>
+  <tr>
+    <td>ViVit Tiny ensemble</td>
+    <td>72.0</td>
+    <td>22.10</td>
+  </tr>
+  <tr>
+    <td>ViSwin Tiny ensemble</td>
+    <td>73.1</td>
+    <td>18.48</td>
+  </tr>
+</tbody>
+</table>
+
 ## Download the dataset
 
 Ask maintainers for the dataset and store it.

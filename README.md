@@ -55,6 +55,12 @@
     <td>73.1</td>
     <td>18.48</td>
   </tr>
+  <tr>
+    <td>NetVLAD++</td>
+    <td>-<br></td>
+    <td>11.51</td>
+    <td>1.55</td>
+  </tr>
 </tbody>
 </table>
 

@@ -1,0 +1,43 @@
+Metric: loose
+                      Any    Visible    Unseen
+------------------  -----  ---------  --------
+Penalty              0          0         0
+Kick-off            13.43      13.43      0
+Goal                 0          0         0
+Substitution         0          0         0
+Offside              0          0         0
+Shots on target      0          0         0
+Shots off target     0          0         0
+Clearance            1.57       1.57      0
+Ball out of play    10.56      11.46      1.18
+Throw-in            21.19      21.27     17.27
+Foul                 0          0         0
+Indirect free-kick   0          0         0
+Direct free-kick     0          0         0
+Corner               4.55       4.55      0
+Yellow card          0          0         0
+Red card             0          0         0
+Yellow->red card     0          0         0
+Average mAP          3.02       3.07      1.42
+
+Metric: tight
+                      Any    Visible    Unseen
+------------------  -----  ---------  --------
+Penalty              0          0            0
+Kick-off             4.55       4.55         0
+Goal                 0          0            0
+Substitution         0          0            0
+Offside              0          0            0
+Shots on target      0          0            0
+Shots off target     0          0            0
+Clearance            0          0            0
+Ball out of play     2.1        2.1          0
+Throw-in             3.33       3.35         0
+Foul                 0          0            0
+Indirect free-kick   0          0            0
+Direct free-kick     0          0            0
+Corner               0          0            0
+Yellow card          0          0            0
+Red card             0          0            0
+Yellow->red card     0          0            0
+Average mAP          0.59       0.59         0

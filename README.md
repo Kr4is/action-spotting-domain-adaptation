@@ -67,6 +67,17 @@
     <td>14.10</td>
     <td>0.39</td>
   </tr>
+  <tr>
+    <td rowspan="2">Pooling</td>
+    <td>MaxPooling</td>
+    <td>-</td>
+    <td>0.49</td>
+  </tr>
+  <tr>
+    <td>NetVLAD</td>
+    <td>4.20</td>
+    <td>0.59</td>
+  </tr>
 </tbody>
 </table>
 

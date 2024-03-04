@@ -67,7 +67,7 @@ model="CALF_benchmark" # Model name
 dataset_path=/path/to/dataset/test
 
 python src/main.py \
-    --SoccerNet_path= $dataset_path \
+    --SoccerNet_path=$dataset_path \
     --model_name=$model \
     --features=ResNET_TF2_PCA512.npy \
     --num_features=512 \

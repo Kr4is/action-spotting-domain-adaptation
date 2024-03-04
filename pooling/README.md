@@ -86,10 +86,10 @@ python src/main.py \
     --patience 10 \
     --evaluation_frequency=10 \
     --pool=MAX \
-    --NMS_threshold 0.5 \
+    --NMS_threshold 0.0 \
     --split_train train \
     --split_valid valid \
-    --split_test test challenge \
+    --split_test test \
     --test_only
 ```
 
@@ -112,6 +112,6 @@ python src/main.py \
     --NMS_threshold 0.5 \
     --split_train train \
     --split_valid valid \
-    --split_test test challenge \
+    --split_test test \
     --test_only
 ```

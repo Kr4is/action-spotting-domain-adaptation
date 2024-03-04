@@ -137,9 +137,7 @@ split=test
 python test_e2e.py \
     $model_dir \
     $spot_dataset \
-    -s $split \
-    seed.seed=$seed \
-    --save
+    -s $split
 ```
 
 ## Evaluate
@@ -160,10 +158,10 @@ To evaluate with the SoccerNet metrics launch the following command:
 ```bash
 split=test
 model_path=/path/to/spot/model
-datset_path=/path/to/dataset/test
+dataset_path=/path/to/dataset/test
 
 python eval_soccernetv2.py \
     $model_path \
     -s $split \
-    -l $datset_path
+    -l $dataset_path
 ```

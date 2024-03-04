@@ -1,0 +1,48 @@
+Applying NMS: 2
+Done processing prediction files!
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 99.48it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [00:04<00:00,  2.89it/s]
+Metric: loose
+                       Any    Visible    Unseen
+------------------  ------  ---------  --------
+Penalty             100        100         0
+Kick-off            100        100         0
+Goal                 79.33      81.07      0
+Substitution         10.87      15.81      0
+Offside              47.44      77.63     35.26
+Shots on target      59.82      59.82      0
+Shots off target     56.09      56.09      0
+Clearance            90.28      90.28      0
+Ball out of play     89.34      89.34     90.91
+Throw-in             91.85      91.85      0
+Foul                 88.08      88.18     84.85
+Indirect free-kick   85.42      85.44     84.85
+Direct free-kick     82.16      82.25      0
+Corner               91.77      91.77      0
+Yellow card          26.29      26.82      0
+Red card              0          0         0
+Yellow->red card      0          0         0
+Average mAP          64.63      66.84     22.76
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 99.49it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:01<00:00,  2.90it/s]
+Metric: tight
+                       Any    Visible    Unseen
+------------------  ------  ---------  --------
+Penalty             100        100         0
+Kick-off             92.92      92.92      0
+Goal                 76.9       79.12      0
+Substitution          5.99       8.03      0
+Offside              40.47      75.2      23.9
+Shots on target      57.68      57.68      0
+Shots off target     55.33      55.33      0
+Clearance            90.17      90.17      0
+Ball out of play     85.91      85.93     87.5
+Throw-in             90.1       90.1       0
+Foul                 84.17      84.28     84.85
+Indirect free-kick   82.9       83        81.06
+Direct free-kick     82.16      82.25      0
+Corner               90.9       90.9       0
+Yellow card          14         14.2       0
+Red card              0          0         0
+Yellow->red card      0          0         0
+Average mAP          61.74      64.07     21.33

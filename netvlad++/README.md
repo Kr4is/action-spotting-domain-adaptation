@@ -92,7 +92,20 @@ model="NetVLAD++" # Model name
 dataset_path=/path/to/dataset/test
 
 python src/main.py \
-    --SoccerNet_path= $dataset_path \
+    --SoccerNet_path=$dataset_path_test \
     --model_name=$model \
     --test_only
+```
+
+## Training
+
+To train a model launch the following command:
+
+```bash
+model="NetVLAD++_england"
+dataset_path=/path/to/dataset/test
+
+python src/main.py \
+    --SoccerNet_path=$dataset_path \
+    --model_name=$model
 ```

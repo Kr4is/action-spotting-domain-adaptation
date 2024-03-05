@@ -1,5 +1,131 @@
 # Action Spotting Domain Adaptation
 
+## Soccernet partitions
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Soccernet<br><br>Partition<br></th>
+    <th rowspan="2">Games</th>
+    <th colspan="4">Train Games</th>
+    <th colspan="4">Valid Games</th>
+    <th colspan="4">Test Games</th>
+  </tr>
+  <tr>
+    <th>2014/2015<br></th>
+    <th>2015/2016</th>
+    <th>2016/2017</th>
+    <th>Total</th>
+    <th>2014/2015<br></th>
+    <th>2015/2016</th>
+    <th>2016/2017</th>
+    <th>Total</th>
+    <th>2014/2015<br></th>
+    <th>2015/2016</th>
+    <th>2016/2017</th>
+    <th>Total</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>England EPL</td>
+    <td>95</td>
+    <td>4</td>
+    <td>25</td>
+    <td>29</td>
+    <td>58</td>
+    <td>1</td>
+    <td>12</td>
+    <td>6</td>
+    <td>19</td>
+    <td>1</td>
+    <td>12</td>
+    <td>5</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>Europe UEFA</td>
+    <td>101</td>
+    <td>22</td>
+    <td>29</td>
+    <td>11</td>
+    <td>62</td>
+    <td>8</td>
+    <td>10</td>
+    <td>2</td>
+    <td>20</td>
+    <td>7</td>
+    <td>6</td>
+    <td>6</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>France Ligue 1</td>
+    <td>38</td>
+    <td>1</td>
+    <td>2</td>
+    <td>24</td>
+    <td>27</td>
+    <td>0</td>
+    <td>1</td>
+    <td>8</td>
+    <td>9</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Germany Bundesliga</td>
+    <td>53</td>
+    <td>5</td>
+    <td>10</td>
+    <td>16</td>
+    <td>31</td>
+    <td>2</td>
+    <td>4</td>
+    <td>2</td>
+    <td>8</td>
+    <td>1</td>
+    <td>4</td>
+    <td>9</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>Italy Serie A</td>
+    <td>96</td>
+    <td>7</td>
+    <td>5</td>
+    <td>44</td>
+    <td>56</td>
+    <td>3</td>
+    <td>1</td>
+    <td>14</td>
+    <td>18</td>
+    <td>1</td>
+    <td>3</td>
+    <td>18</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>Spain La Liga</td>
+    <td>117</td>
+    <td>6</td>
+    <td>18</td>
+    <td>42</td>
+    <td>66</td>
+    <td>6</td>
+    <td>9</td>
+    <td>11</td>
+    <td>26</td>
+    <td>6</td>
+    <td>9</td>
+    <td>10</td>
+    <td>25</td>
+  </tr>
+</tbody>
+</table>
+
 ## Baseline Results
 
 <table>

@@ -5,16 +5,20 @@
 <table>
 <thead>
   <tr>
-    <th rowspan="3">Work</th>
-    <th rowspan="3">Models</th>
-    <th colspan="2">Datasets</th>
+    <th rowspan="4">Work</th>
+    <th rowspan="4">Models</th>
+    <th colspan="3">Datasets</th>
   </tr>
   <tr>
-    <th>Soccernet</th>
-    <th>Domain Adaptation</th>
+    <th rowspan="2">Soccernet</th>
+    <th colspan="2">Domain Adaptation</th>
   </tr>
   <tr>
-    <th colspan="2">Tight Average mAP</th>
+    <th>Human Camera<br></th>
+    <th>AI Camera</th>
+  </tr>
+  <tr>
+    <th colspan="3">Tight Average mAP</th>
   </tr>
 </thead>
 <tbody>
@@ -22,60 +26,71 @@
     <td rowspan="3">Spot</td>
     <td>rny002gsm_gru</td>
     <td>63.28</td>
+    <td>55.68</td>
     <td>13.33</td>
   </tr>
   <tr>
     <td>rny008gsm_gru</td>
     <td>66.01</td>
+    <td>61.78</td>
     <td>14.48</td>
   </tr>
   <tr>
     <td>Challenge<br>rny002gsm_gru<br></td>
     <td>66.73</td>
+    <td>61.74</td>
     <td>18.96</td>
   </tr>
   <tr>
     <td rowspan="4">Comedian</td>
     <td>ViViT Tiny</td>
     <td>70.7</td>
+    <td>61.39</td>
     <td>17.96</td>
   </tr>
   <tr>
     <td>ViSwin Tiny</td>
     <td>71.6</td>
+    <td>63.87</td>
     <td>22.04</td>
   </tr>
   <tr>
     <td>ViVit Tiny ensemble</td>
     <td>72.0</td>
+    <td>57.94</td>
     <td>22.10</td>
   </tr>
   <tr>
     <td>ViSwin Tiny ensemble</td>
     <td>73.1</td>
+    <td>62.55</td>
     <td>18.48</td>
   </tr>
   <tr>
     <td>NetVLAD++</td>
-    <td>-<br></td>
+    <td>NetVLAD++<br></td>
     <td>11.51</td>
+    <td>5.09</td>
     <td>1.55</td>
   </tr>
   <tr>
     <td>CALF</td>
-    <td>-<br></td>
+    <td>CALF<br></td>
     <td>14.10</td>
+    <td>4.48</td>
     <td>0.39</td>
   </tr>
   <tr>
     <td rowspan="2">Pooling</td>
     <td>MaxPooling</td>
     <td>-</td>
+    <td>0.66</td>
     <td>0.49</td>
   </tr>
   <tr>
     <td>NetVLAD</td>
     <td>4.20</td>
+    <td>0.6</td>
     <td>0.59</td>
   </tr>
 </tbody>

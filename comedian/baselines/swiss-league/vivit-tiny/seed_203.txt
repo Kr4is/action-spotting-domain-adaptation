@@ -1,0 +1,393 @@
+Testing DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████| 106/106 [02:42<00:00,  0.65it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 80.40it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:01<00:00,  2.56it/s]
+tight_Average_mAP/mAP: 0.6139
+tight_Average_mAP/mAP_Penalty: 1.0000
+tight_Average_mAP/mAP_Kick-off: 0.9686
+tight_Average_mAP/mAP_Goal: 0.5856
+tight_Average_mAP/mAP_Substitution: 0.4463
+tight_Average_mAP/mAP_Offside: 0.3504
+tight_Average_mAP/mAP_Shots on target: 0.5496
+tight_Average_mAP/mAP_Shots off target: 0.5438
+tight_Average_mAP/mAP_Clearance: 0.8417
+tight_Average_mAP/mAP_Ball out of play: 0.8402
+tight_Average_mAP/mAP_Throw-in: 0.8827
+tight_Average_mAP/mAP_Foul: 0.8065
+tight_Average_mAP/mAP_Indirect free-kick: 0.7800
+tight_Average_mAP/mAP_Direct free-kick: 0.8722
+tight_Average_mAP/mAP_Corner: 0.9193
+tight_Average_mAP/mAP_Yellow card: 0.0497
+tight_Average_mAP/mAP_Red card: 0.0000
+tight_Average_mAP/mAP_Yellow->red card: 0.0000
+tight_Average_mAP_visible/mAP: 0.6332
+tight_Average_mAP_visible/mAP_Penalty: 1.0000
+tight_Average_mAP_visible/mAP_Kick-off: 0.9686
+tight_Average_mAP_visible/mAP_Goal: 0.5932
+tight_Average_mAP_visible/mAP_Substitution: 0.4520
+tight_Average_mAP_visible/mAP_Offside: 0.6576
+tight_Average_mAP_visible/mAP_Shots on target: 0.5496
+tight_Average_mAP_visible/mAP_Shots off target: 0.5438
+tight_Average_mAP_visible/mAP_Clearance: 0.8417
+tight_Average_mAP_visible/mAP_Ball out of play: 0.8403
+tight_Average_mAP_visible/mAP_Throw-in: 0.8827
+tight_Average_mAP_visible/mAP_Foul: 0.8063
+tight_Average_mAP_visible/mAP_Indirect free-kick: 0.7813
+tight_Average_mAP_visible/mAP_Direct free-kick: 0.8751
+tight_Average_mAP_visible/mAP_Corner: 0.9193
+tight_Average_mAP_visible/mAP_Yellow card: 0.0529
+tight_Average_mAP_visible/mAP_Red card: 0.0000
+tight_Average_mAP_visible/mAP_Yellow->red card: 0.0000
+tight_Average_mAP_unshown/mAP: 0.1928
+tight_Average_mAP_unshown/mAP_Penalty: 0.0000
+tight_Average_mAP_unshown/mAP_Kick-off: 0.0000
+tight_Average_mAP_unshown/mAP_Goal: 0.0000
+tight_Average_mAP_unshown/mAP_Substitution: 0.0000
+tight_Average_mAP_unshown/mAP_Offside: 0.2658
+tight_Average_mAP_unshown/mAP_Shots on target: 0.0000
+tight_Average_mAP_unshown/mAP_Shots off target: 0.0000
+tight_Average_mAP_unshown/mAP_Clearance: 0.0000
+tight_Average_mAP_unshown/mAP_Ball out of play: 0.9375
+tight_Average_mAP_unshown/mAP_Throw-in: 0.0000
+tight_Average_mAP_unshown/mAP_Foul: 0.5455
+tight_Average_mAP_unshown/mAP_Indirect free-kick: 0.7572
+tight_Average_mAP_unshown/mAP_Direct free-kick: 0.0000
+tight_Average_mAP_unshown/mAP_Corner: 0.0000
+tight_Average_mAP_unshown/mAP_Yellow card: 0.0000
+tight_Average_mAP_unshown/mAP_Red card: 0.0000
+tight_Average_mAP_unshown/mAP_Yellow->red card: 0.0000
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 82.14it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.59it/s]
+at1_Average_mAP/mAP: 0.5251
+at1_Average_mAP/mAP_Penalty: 1.0000
+at1_Average_mAP/mAP_Kick-off: 0.8231
+at1_Average_mAP/mAP_Goal: 0.4134
+at1_Average_mAP/mAP_Substitution: 0.2374
+at1_Average_mAP/mAP_Offside: 0.1959
+at1_Average_mAP/mAP_Shots on target: 0.4376
+at1_Average_mAP/mAP_Shots off target: 0.4404
+at1_Average_mAP/mAP_Clearance: 0.8030
+at1_Average_mAP/mAP_Ball out of play: 0.6594
+at1_Average_mAP/mAP_Throw-in: 0.7705
+at1_Average_mAP/mAP_Foul: 0.7262
+at1_Average_mAP/mAP_Indirect free-kick: 0.6826
+at1_Average_mAP/mAP_Direct free-kick: 0.8130
+at1_Average_mAP/mAP_Corner: 0.8873
+at1_Average_mAP/mAP_Yellow card: 0.0368
+at1_Average_mAP/mAP_Red card: 0.0000
+at1_Average_mAP/mAP_Yellow->red card: 0.0000
+at1_Average_mAP_visible/mAP: 0.5433
+at1_Average_mAP_visible/mAP_Penalty: 1.0000
+at1_Average_mAP_visible/mAP_Kick-off: 0.8233
+at1_Average_mAP_visible/mAP_Goal: 0.4191
+at1_Average_mAP_visible/mAP_Substitution: 0.2418
+at1_Average_mAP_visible/mAP_Offside: 0.4900
+at1_Average_mAP_visible/mAP_Shots on target: 0.4376
+at1_Average_mAP_visible/mAP_Shots off target: 0.4404
+at1_Average_mAP_visible/mAP_Clearance: 0.8030
+at1_Average_mAP_visible/mAP_Ball out of play: 0.6595
+at1_Average_mAP_visible/mAP_Throw-in: 0.7705
+at1_Average_mAP_visible/mAP_Foul: 0.7258
+at1_Average_mAP_visible/mAP_Indirect free-kick: 0.6845
+at1_Average_mAP_visible/mAP_Direct free-kick: 0.8148
+at1_Average_mAP_visible/mAP_Corner: 0.8873
+at1_Average_mAP_visible/mAP_Yellow card: 0.0380
+at1_Average_mAP_visible/mAP_Red card: 0.0000
+at1_Average_mAP_visible/mAP_Yellow->red card: 0.0000
+at1_Average_mAP_unshown/mAP: 0.1013
+at1_Average_mAP_unshown/mAP_Penalty: 0.0000
+at1_Average_mAP_unshown/mAP_Kick-off: 0.0000
+at1_Average_mAP_unshown/mAP_Goal: 0.0000
+at1_Average_mAP_unshown/mAP_Substitution: 0.0000
+at1_Average_mAP_unshown/mAP_Offside: 0.1304
+at1_Average_mAP_unshown/mAP_Shots on target: 0.0000
+at1_Average_mAP_unshown/mAP_Shots off target: 0.0000
+at1_Average_mAP_unshown/mAP_Clearance: 0.0000
+at1_Average_mAP_unshown/mAP_Ball out of play: 0.5000
+at1_Average_mAP_unshown/mAP_Throw-in: 0.0000
+at1_Average_mAP_unshown/mAP_Foul: 0.5455
+at1_Average_mAP_unshown/mAP_Indirect free-kick: 0.5455
+at1_Average_mAP_unshown/mAP_Direct free-kick: 0.0000
+at1_Average_mAP_unshown/mAP_Corner: 0.0000
+at1_Average_mAP_unshown/mAP_Yellow card: 0.0000
+at1_Average_mAP_unshown/mAP_Red card: 0.0000
+at1_Average_mAP_unshown/mAP_Yellow->red card: 0.0000
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 81.87it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.60it/s]
+at2_Average_mAP/mAP: 0.6105
+at2_Average_mAP/mAP_Penalty: 1.0000
+at2_Average_mAP/mAP_Kick-off: 0.9627
+at2_Average_mAP/mAP_Goal: 0.5599
+at2_Average_mAP/mAP_Substitution: 0.4632
+at2_Average_mAP/mAP_Offside: 0.3360
+at2_Average_mAP/mAP_Shots on target: 0.5429
+at2_Average_mAP/mAP_Shots off target: 0.5497
+at2_Average_mAP/mAP_Clearance: 0.8465
+at2_Average_mAP/mAP_Ball out of play: 0.8269
+at2_Average_mAP/mAP_Throw-in: 0.8956
+at2_Average_mAP/mAP_Foul: 0.7914
+at2_Average_mAP/mAP_Indirect free-kick: 0.7744
+at2_Average_mAP/mAP_Direct free-kick: 0.8806
+at2_Average_mAP/mAP_Corner: 0.9091
+at2_Average_mAP/mAP_Yellow card: 0.0398
+at2_Average_mAP/mAP_Red card: 0.0000
+at2_Average_mAP/mAP_Yellow->red card: 0.0000
+at2_Average_mAP_visible/mAP: 0.6320
+at2_Average_mAP_visible/mAP_Penalty: 1.0000
+at2_Average_mAP_visible/mAP_Kick-off: 0.9627
+at2_Average_mAP_visible/mAP_Goal: 0.5673
+at2_Average_mAP_visible/mAP_Substitution: 0.4679
+at2_Average_mAP_visible/mAP_Offside: 0.6815
+at2_Average_mAP_visible/mAP_Shots on target: 0.5429
+at2_Average_mAP_visible/mAP_Shots off target: 0.5497
+at2_Average_mAP_visible/mAP_Clearance: 0.8465
+at2_Average_mAP_visible/mAP_Ball out of play: 0.8269
+at2_Average_mAP_visible/mAP_Throw-in: 0.8956
+at2_Average_mAP_visible/mAP_Foul: 0.7913
+at2_Average_mAP_visible/mAP_Indirect free-kick: 0.7776
+at2_Average_mAP_visible/mAP_Direct free-kick: 0.8837
+at2_Average_mAP_visible/mAP_Corner: 0.9091
+at2_Average_mAP_visible/mAP_Yellow card: 0.0417
+at2_Average_mAP_visible/mAP_Red card: 0.0000
+at2_Average_mAP_visible/mAP_Yellow->red card: 0.0000
+at2_Average_mAP_unshown/mAP: 0.1423
+at2_Average_mAP_unshown/mAP_Penalty: 0.0000
+at2_Average_mAP_unshown/mAP_Kick-off: 0.0000
+at2_Average_mAP_unshown/mAP_Goal: 0.0000
+at2_Average_mAP_unshown/mAP_Substitution: 0.0000
+at2_Average_mAP_unshown/mAP_Offside: 0.2463
+at2_Average_mAP_unshown/mAP_Shots on target: 0.0000
+at2_Average_mAP_unshown/mAP_Shots off target: 0.0000
+at2_Average_mAP_unshown/mAP_Clearance: 0.0000
+at2_Average_mAP_unshown/mAP_Ball out of play: 1.0000
+at2_Average_mAP_unshown/mAP_Throw-in: 0.0000
+at2_Average_mAP_unshown/mAP_Foul: 0.5455
+at2_Average_mAP_unshown/mAP_Indirect free-kick: 0.6281
+at2_Average_mAP_unshown/mAP_Direct free-kick: 0.0000
+at2_Average_mAP_unshown/mAP_Corner: 0.0000
+at2_Average_mAP_unshown/mAP_Yellow card: 0.0000
+at2_Average_mAP_unshown/mAP_Red card: 0.0000
+at2_Average_mAP_unshown/mAP_Yellow->red card: 0.0000
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 81.64it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.59it/s]
+at3_Average_mAP/mAP: 0.6292
+at3_Average_mAP/mAP_Penalty: 1.0000
+at3_Average_mAP/mAP_Kick-off: 1.0000
+at3_Average_mAP/mAP_Goal: 0.6304
+at3_Average_mAP/mAP_Substitution: 0.4814
+at3_Average_mAP/mAP_Offside: 0.3692
+at3_Average_mAP/mAP_Shots on target: 0.5597
+at3_Average_mAP/mAP_Shots off target: 0.5575
+at3_Average_mAP/mAP_Clearance: 0.8476
+at3_Average_mAP/mAP_Ball out of play: 0.8695
+at3_Average_mAP/mAP_Throw-in: 0.8985
+at3_Average_mAP/mAP_Foul: 0.8249
+at3_Average_mAP/mAP_Indirect free-kick: 0.7962
+at3_Average_mAP/mAP_Direct free-kick: 0.8806
+at3_Average_mAP/mAP_Corner: 0.9297
+at3_Average_mAP/mAP_Yellow card: 0.0518
+at3_Average_mAP/mAP_Red card: 0.0000
+at3_Average_mAP/mAP_Yellow->red card: 0.0000
+at3_Average_mAP_visible/mAP: 0.6489
+at3_Average_mAP_visible/mAP_Penalty: 1.0000
+at3_Average_mAP_visible/mAP_Kick-off: 1.0000
+at3_Average_mAP_visible/mAP_Goal: 0.6383
+at3_Average_mAP_visible/mAP_Substitution: 0.4878
+at3_Average_mAP_visible/mAP_Offside: 0.6815
+at3_Average_mAP_visible/mAP_Shots on target: 0.5597
+at3_Average_mAP_visible/mAP_Shots off target: 0.5575
+at3_Average_mAP_visible/mAP_Clearance: 0.8476
+at3_Average_mAP_visible/mAP_Ball out of play: 0.8695
+at3_Average_mAP_visible/mAP_Throw-in: 0.8985
+at3_Average_mAP_visible/mAP_Foul: 0.8247
+at3_Average_mAP_visible/mAP_Indirect free-kick: 0.7973
+at3_Average_mAP_visible/mAP_Direct free-kick: 0.8837
+at3_Average_mAP_visible/mAP_Corner: 0.9297
+at3_Average_mAP_visible/mAP_Yellow card: 0.0549
+at3_Average_mAP_visible/mAP_Red card: 0.0000
+at3_Average_mAP_visible/mAP_Yellow->red card: 0.0000
+at3_Average_mAP_unshown/mAP: 0.1451
+at3_Average_mAP_unshown/mAP_Penalty: 0.0000
+at3_Average_mAP_unshown/mAP_Kick-off: 0.0000
+at3_Average_mAP_unshown/mAP_Goal: 0.0000
+at3_Average_mAP_unshown/mAP_Substitution: 0.0000
+at3_Average_mAP_unshown/mAP_Offside: 0.2937
+at3_Average_mAP_unshown/mAP_Shots on target: 0.0000
+at3_Average_mAP_unshown/mAP_Shots off target: 0.0000
+at3_Average_mAP_unshown/mAP_Clearance: 0.0000
+at3_Average_mAP_unshown/mAP_Ball out of play: 1.0000
+at3_Average_mAP_unshown/mAP_Throw-in: 0.0000
+at3_Average_mAP_unshown/mAP_Foul: 0.5455
+at3_Average_mAP_unshown/mAP_Indirect free-kick: 0.6281
+at3_Average_mAP_unshown/mAP_Direct free-kick: 0.0000
+at3_Average_mAP_unshown/mAP_Corner: 0.0000
+at3_Average_mAP_unshown/mAP_Yellow card: 0.0000
+at3_Average_mAP_unshown/mAP_Red card: 0.0000
+at3_Average_mAP_unshown/mAP_Yellow->red card: 0.0000
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 81.02it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.59it/s]
+at4_Average_mAP/mAP: 0.6348
+at4_Average_mAP/mAP_Penalty: 1.0000
+at4_Average_mAP/mAP_Kick-off: 1.0000
+at4_Average_mAP/mAP_Goal: 0.6304
+at4_Average_mAP/mAP_Substitution: 0.4814
+at4_Average_mAP/mAP_Offside: 0.3991
+at4_Average_mAP/mAP_Shots on target: 0.5847
+at4_Average_mAP/mAP_Shots off target: 0.5652
+at4_Average_mAP/mAP_Clearance: 0.8476
+at4_Average_mAP/mAP_Ball out of play: 0.8882
+at4_Average_mAP/mAP_Throw-in: 0.9007
+at4_Average_mAP/mAP_Foul: 0.8306
+at4_Average_mAP/mAP_Indirect free-kick: 0.7977
+at4_Average_mAP/mAP_Direct free-kick: 0.8806
+at4_Average_mAP/mAP_Corner: 0.9297
+at4_Average_mAP/mAP_Yellow card: 0.0560
+at4_Average_mAP/mAP_Red card: 0.0000
+at4_Average_mAP/mAP_Yellow->red card: 0.0000
+at4_Average_mAP_visible/mAP: 0.6527
+at4_Average_mAP_visible/mAP_Penalty: 1.0000
+at4_Average_mAP_visible/mAP_Kick-off: 1.0000
+at4_Average_mAP_visible/mAP_Goal: 0.6383
+at4_Average_mAP_visible/mAP_Substitution: 0.4878
+at4_Average_mAP_visible/mAP_Offside: 0.6815
+at4_Average_mAP_visible/mAP_Shots on target: 0.5847
+at4_Average_mAP_visible/mAP_Shots off target: 0.5652
+at4_Average_mAP_visible/mAP_Clearance: 0.8476
+at4_Average_mAP_visible/mAP_Ball out of play: 0.8885
+at4_Average_mAP_visible/mAP_Throw-in: 0.9007
+at4_Average_mAP_visible/mAP_Foul: 0.8305
+at4_Average_mAP_visible/mAP_Indirect free-kick: 0.7975
+at4_Average_mAP_visible/mAP_Direct free-kick: 0.8837
+at4_Average_mAP_visible/mAP_Corner: 0.9297
+at4_Average_mAP_visible/mAP_Yellow card: 0.0596
+at4_Average_mAP_visible/mAP_Red card: 0.0000
+at4_Average_mAP_visible/mAP_Yellow->red card: 0.0000
+at4_Average_mAP_unshown/mAP: 0.1677
+at4_Average_mAP_unshown/mAP_Penalty: 0.0000
+at4_Average_mAP_unshown/mAP_Kick-off: 0.0000
+at4_Average_mAP_unshown/mAP_Goal: 0.0000
+at4_Average_mAP_unshown/mAP_Substitution: 0.0000
+at4_Average_mAP_unshown/mAP_Offside: 0.3053
+at4_Average_mAP_unshown/mAP_Shots on target: 0.0000
+at4_Average_mAP_unshown/mAP_Shots off target: 0.0000
+at4_Average_mAP_unshown/mAP_Clearance: 0.0000
+at4_Average_mAP_unshown/mAP_Ball out of play: 1.0000
+at4_Average_mAP_unshown/mAP_Throw-in: 0.0000
+at4_Average_mAP_unshown/mAP_Foul: 0.5455
+at4_Average_mAP_unshown/mAP_Indirect free-kick: 1.0000
+at4_Average_mAP_unshown/mAP_Direct free-kick: 0.0000
+at4_Average_mAP_unshown/mAP_Corner: 0.0000
+at4_Average_mAP_unshown/mAP_Yellow card: 0.0000
+at4_Average_mAP_unshown/mAP_Red card: 0.0000
+at4_Average_mAP_unshown/mAP_Yellow->red card: 0.0000
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 80.95it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.60it/s]
+at5_Average_mAP/mAP: 0.6372
+at5_Average_mAP/mAP_Penalty: 1.0000
+at5_Average_mAP/mAP_Kick-off: 1.0000
+at5_Average_mAP/mAP_Goal: 0.6304
+at5_Average_mAP/mAP_Substitution: 0.4814
+at5_Average_mAP/mAP_Offside: 0.3991
+at5_Average_mAP/mAP_Shots on target: 0.5847
+at5_Average_mAP/mAP_Shots off target: 0.5652
+at5_Average_mAP/mAP_Clearance: 0.8476
+at5_Average_mAP/mAP_Ball out of play: 0.8929
+at5_Average_mAP/mAP_Throw-in: 0.9017
+at5_Average_mAP/mAP_Foul: 0.8319
+at5_Average_mAP/mAP_Indirect free-kick: 0.8210
+at5_Average_mAP/mAP_Direct free-kick: 0.8806
+at5_Average_mAP/mAP_Corner: 0.9297
+at5_Average_mAP/mAP_Yellow card: 0.0659
+at5_Average_mAP/mAP_Red card: 0.0000
+at5_Average_mAP/mAP_Yellow->red card: 0.0000
+at5_Average_mAP_visible/mAP: 0.6552
+at5_Average_mAP_visible/mAP_Penalty: 1.0000
+at5_Average_mAP_visible/mAP_Kick-off: 1.0000
+at5_Average_mAP_visible/mAP_Goal: 0.6383
+at5_Average_mAP_visible/mAP_Substitution: 0.4878
+at5_Average_mAP_visible/mAP_Offside: 0.6815
+at5_Average_mAP_visible/mAP_Shots on target: 0.5847
+at5_Average_mAP_visible/mAP_Shots off target: 0.5652
+at5_Average_mAP_visible/mAP_Clearance: 0.8476
+at5_Average_mAP_visible/mAP_Ball out of play: 0.8929
+at5_Average_mAP_visible/mAP_Throw-in: 0.9017
+at5_Average_mAP_visible/mAP_Foul: 0.8318
+at5_Average_mAP_visible/mAP_Indirect free-kick: 0.8210
+at5_Average_mAP_visible/mAP_Direct free-kick: 0.8837
+at5_Average_mAP_visible/mAP_Corner: 0.9297
+at5_Average_mAP_visible/mAP_Yellow card: 0.0725
+at5_Average_mAP_visible/mAP_Red card: 0.0000
+at5_Average_mAP_visible/mAP_Yellow->red card: 0.0000
+at5_Average_mAP_unshown/mAP: 0.1677
+at5_Average_mAP_unshown/mAP_Penalty: 0.0000
+at5_Average_mAP_unshown/mAP_Kick-off: 0.0000
+at5_Average_mAP_unshown/mAP_Goal: 0.0000
+at5_Average_mAP_unshown/mAP_Substitution: 0.0000
+at5_Average_mAP_unshown/mAP_Offside: 0.3053
+at5_Average_mAP_unshown/mAP_Shots on target: 0.0000
+at5_Average_mAP_unshown/mAP_Shots off target: 0.0000
+at5_Average_mAP_unshown/mAP_Clearance: 0.0000
+at5_Average_mAP_unshown/mAP_Ball out of play: 1.0000
+at5_Average_mAP_unshown/mAP_Throw-in: 0.0000
+at5_Average_mAP_unshown/mAP_Foul: 0.5455
+at5_Average_mAP_unshown/mAP_Indirect free-kick: 1.0000
+at5_Average_mAP_unshown/mAP_Direct free-kick: 0.0000
+at5_Average_mAP_unshown/mAP_Corner: 0.0000
+at5_Average_mAP_unshown/mAP_Yellow card: 0.0000
+at5_Average_mAP_unshown/mAP_Red card: 0.0000
+at5_Average_mAP_unshown/mAP_Yellow->red card: 0.0000
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 81.72it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████| 12/12 [00:04<00:00,  2.58it/s]
+loose_Average_mAP/mAP: 0.6469
+loose_Average_mAP/mAP_Penalty: 1.0000
+loose_Average_mAP/mAP_Kick-off: 1.0000
+loose_Average_mAP/mAP_Goal: 0.6521
+loose_Average_mAP/mAP_Substitution: 0.5643
+loose_Average_mAP/mAP_Offside: 0.3997
+loose_Average_mAP/mAP_Shots on target: 0.6049
+loose_Average_mAP/mAP_Shots off target: 0.5656
+loose_Average_mAP/mAP_Clearance: 0.8476
+loose_Average_mAP/mAP_Ball out of play: 0.9005
+loose_Average_mAP/mAP_Throw-in: 0.9006
+loose_Average_mAP/mAP_Foul: 0.8462
+loose_Average_mAP/mAP_Indirect free-kick: 0.8303
+loose_Average_mAP/mAP_Direct free-kick: 0.8806
+loose_Average_mAP/mAP_Corner: 0.9297
+loose_Average_mAP/mAP_Yellow card: 0.0756
+loose_Average_mAP/mAP_Red card: 0.0000
+loose_Average_mAP/mAP_Yellow->red card: 0.0000
+loose_Average_mAP_visible/mAP: 0.6658
+loose_Average_mAP_visible/mAP_Penalty: 1.0000
+loose_Average_mAP_visible/mAP_Kick-off: 1.0000
+loose_Average_mAP_visible/mAP_Goal: 0.6627
+loose_Average_mAP_visible/mAP_Substitution: 0.5720
+loose_Average_mAP_visible/mAP_Offside: 0.6815
+loose_Average_mAP_visible/mAP_Shots on target: 0.6049
+loose_Average_mAP_visible/mAP_Shots off target: 0.5656
+loose_Average_mAP_visible/mAP_Clearance: 0.8476
+loose_Average_mAP_visible/mAP_Ball out of play: 0.9027
+loose_Average_mAP_visible/mAP_Throw-in: 0.9006
+loose_Average_mAP_visible/mAP_Foul: 0.8533
+loose_Average_mAP_visible/mAP_Indirect free-kick: 0.8301
+loose_Average_mAP_visible/mAP_Direct free-kick: 0.8837
+loose_Average_mAP_visible/mAP_Corner: 0.9297
+loose_Average_mAP_visible/mAP_Yellow card: 0.0836
+loose_Average_mAP_visible/mAP_Red card: 0.0000
+loose_Average_mAP_visible/mAP_Yellow->red card: 0.0000
+loose_Average_mAP_unshown/mAP: 0.2125
+loose_Average_mAP_unshown/mAP_Penalty: 0.0000
+loose_Average_mAP_unshown/mAP_Kick-off: 0.0000
+loose_Average_mAP_unshown/mAP_Goal: 0.0000
+loose_Average_mAP_unshown/mAP_Substitution: 0.0000
+loose_Average_mAP_unshown/mAP_Offside: 0.3075
+loose_Average_mAP_unshown/mAP_Shots on target: 0.0000
+loose_Average_mAP_unshown/mAP_Shots off target: 0.0000
+loose_Average_mAP_unshown/mAP_Clearance: 0.0000
+loose_Average_mAP_unshown/mAP_Ball out of play: 0.9091
+loose_Average_mAP_unshown/mAP_Throw-in: 0.0000
+loose_Average_mAP_unshown/mAP_Foul: 0.5455
+loose_Average_mAP_unshown/mAP_Indirect free-kick: 1.0000
+loose_Average_mAP_unshown/mAP_Direct free-kick: 0.0000
+loose_Average_mAP_unshown/mAP_Corner: 0.0000
+loose_Average_mAP_unshown/mAP_Yellow card: 0.0000
+loose_Average_mAP_unshown/mAP_Red card: 0.0000
+loose_Average_mAP_unshown/mAP_Yellow->red card: 0.0000

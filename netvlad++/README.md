@@ -243,7 +243,7 @@ You should have generated the ResNET features.
 
 ```bash
 model="NetVLAD++" # Model name
-dataset_path=/path/to/dataset/test
+dataset_path=/path/to/dataset
 
 python src/main.py \
     --SoccerNet_path=$dataset_path_test \
@@ -256,8 +256,8 @@ python src/main.py \
 To train a model launch the following command:
 
 ```bash
-model="NetVLAD++_england"
-dataset_path=/path/to/dataset/test
+model="NetVLAD++_custom"
+dataset_path=/path/to/dataset
 
 python src/main.py \
     --SoccerNet_path=$dataset_path \

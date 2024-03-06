@@ -1,0 +1,47 @@
+2024-03-05 15:54:06,015 [MainThread  ] [INFO ]  Starting main function
+2024-03-05 15:54:06,015 [MainThread  ] [INFO ]  Parameters:
+2024-03-05 15:54:06,015 [MainThread  ] [INFO ]   SoccerNet_path : /mnt/patatas_fritas/soccernet-italy
+2024-03-05 15:54:06,015 [MainThread  ] [INFO ]         features : ResNET_TF2.npy
+2024-03-05 15:54:06,015 [MainThread  ] [INFO ]       max_epochs : 1000
+2024-03-05 15:54:06,015 [MainThread  ] [INFO ]     load_weights : None
+2024-03-05 15:54:06,015 [MainThread  ] [INFO ]       model_name : NetVLAD++_england
+2024-03-05 15:54:06,015 [MainThread  ] [INFO ]        test_only : True
+2024-03-05 15:54:06,015 [MainThread  ] [INFO ]      split_train : ['train']
+2024-03-05 15:54:06,015 [MainThread  ] [INFO ]      split_valid : ['valid']
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]       split_test : ['test']
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]          version : 2
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]      feature_dim : None
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]  evaluation_frequency : 10
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]        framerate : 2
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]      window_size : 15
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]             pool : NetVLAD++
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]       vocab_size : 64
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]       NMS_window : 30
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]    NMS_threshold : 0.0
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]       batch_size : 256
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]               LR : 0.001
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]              LRe : 1e-06
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]         patience : 10
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]              GPU : -1
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]   max_num_worker : 4
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]             seed : 0
+2024-03-05 15:54:06,016 [MainThread  ] [INFO ]         loglevel : INFO
+2024-03-05 15:54:06,064 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-05 15:54:08,898 [MainThread  ] [INFO ]  Model(
+  (feature_extractor): Linear(in_features=2048, out_features=512, bias=True)
+  (pool_layer_before): NetVLAD()
+  (pool_layer_after): NetVLAD()
+  (fc): Linear(in_features=32768, out_features=18, bias=True)
+  (drop): Dropout(p=0.4, inplace=False)
+  (sigm): Sigmoid()
+)
+2024-03-05 15:54:08,898 [MainThread  ] [INFO ]  Total number of parameters: 1704466
+2024-03-05 15:54:08,909 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-05 15:59:49,633 [MainThread  ] [INFO ]  Best Performance at end of training 
+2024-03-05 15:59:49,633 [MainThread  ] [INFO ]  a_mAP visibility all: 0.078554460707732
+2024-03-05 15:59:49,633 [MainThread  ] [INFO ]  a_mAP visibility all per class: [0.015504451567091536, 0.1139681712994208, 0.02789138317943236, 0.1282057192766606, 0.0098777171774681, 0.06714244837985983, 0.09647461186555582, 0.08709976373658673, 0.11095414148559986, 0.10785026349469795, 0.09360081662291506, 0.03801772258313468, 0.15657857571952027, 0.15189162927197192, 0.1303363020420392, 1.3475000505312518e-05, 1.863932898415657e-05]
+2024-03-05 15:59:49,634 [MainThread  ] [INFO ]  a_mAP visibility visible: 0.08456667983889066
+2024-03-05 15:59:49,634 [MainThread  ] [INFO ]  a_mAP visibility visible per class: [0.0451945027608555, 0.14931836591271513, 0.029652712916835373, 0.14719615572454375, 0.010671470077469939, 0.06759115669120772, 0.09673055253106222, 0.05550229607015712, 0.11096568916954792, 0.1201720073469994, 0.09422115895101012, 0.04814880290580685, 0.16938717851858665, 0.1541486900051099, 0.13788571433774277, 0.00017233950883239983, 0.0006747638326585696]
+2024-03-05 15:59:49,634 [MainThread  ] [INFO ]  a_mAP visibility unshown: 0.04747635876906093
+2024-03-05 15:59:49,634 [MainThread  ] [INFO ]  a_mAP visibility unshown per class: [0.0, 0.09832013444743527, 0.0, 0.003225441512480802, 0.015281038849250042, 0.005498533724340175, 0.0, 0.09585944667834356, 0.11521268494127532, 0.06833043571237798, 0.07472451790633608, 0.049169170755883396, 0.0, 0.08266565693646521, 0.008905602533604163, 0.0, 0.0]
+2024-03-05 15:59:49,634 [MainThread  ] [INFO ]  Total Execution Time is 343.61937975883484 seconds

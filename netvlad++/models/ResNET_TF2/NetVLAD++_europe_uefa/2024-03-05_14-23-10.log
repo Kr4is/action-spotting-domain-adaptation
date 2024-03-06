@@ -1,0 +1,60 @@
+2024-03-05 14:23:10,753 [MainThread  ] [INFO ]  Starting main function
+2024-03-05 14:23:10,753 [MainThread  ] [INFO ]  Parameters:
+2024-03-05 14:23:10,753 [MainThread  ] [INFO ]   SoccerNet_path : /mnt/patatas_fritas/soccernet-europe_uefa
+2024-03-05 14:23:10,753 [MainThread  ] [INFO ]         features : ResNET_TF2.npy
+2024-03-05 14:23:10,753 [MainThread  ] [INFO ]       max_epochs : 1000
+2024-03-05 14:23:10,753 [MainThread  ] [INFO ]     load_weights : None
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]       model_name : NetVLAD++_europe_uefa
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]        test_only : False
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]      split_train : ['train']
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]      split_valid : ['valid']
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]       split_test : ['test']
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]          version : 2
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]      feature_dim : None
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]  evaluation_frequency : 10
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]        framerate : 2
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]      window_size : 15
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]             pool : NetVLAD++
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]       vocab_size : 64
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]       NMS_window : 30
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]    NMS_threshold : 0.0
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]       batch_size : 256
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]               LR : 0.001
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]              LRe : 1e-06
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]         patience : 10
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]              GPU : -1
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]   max_num_worker : 4
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]             seed : 0
+2024-03-05 14:23:10,754 [MainThread  ] [INFO ]         loglevel : INFO
+2024-03-05 14:23:10,801 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-05 14:23:10,801 [MainThread  ] [INFO ]  Pre-compute clips
+2024-03-05 14:24:00,523 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-05 14:24:00,523 [MainThread  ] [INFO ]  Pre-compute clips
+2024-03-05 14:24:15,320 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-05 14:24:15,321 [MainThread  ] [INFO ]  Pre-compute clips
+2024-03-05 14:24:18,354 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-05 14:24:21,124 [MainThread  ] [INFO ]  Model(
+  (feature_extractor): Linear(in_features=2048, out_features=512, bias=True)
+  (pool_layer_before): NetVLAD()
+  (pool_layer_after): NetVLAD()
+  (fc): Linear(in_features=32768, out_features=18, bias=True)
+  (drop): Dropout(p=0.4, inplace=False)
+  (sigm): Sigmoid()
+)
+2024-03-05 14:24:21,124 [MainThread  ] [INFO ]  Total number of parameters: 1704466
+2024-03-05 14:24:21,125 [MainThread  ] [INFO ]  start training
+2024-03-05 14:25:16,908 [MainThread  ] [INFO ]  Validation performance at epoch 11 -> 0.287273339150985
+2024-03-05 14:26:07,711 [MainThread  ] [INFO ]  Validation performance at epoch 21 -> 0.326222807407431
+2024-03-05 14:26:46,086 [MainThread  ] [INFO ]  Plateau Reached!
+2024-03-05 14:26:57,246 [MainThread  ] [INFO ]  Validation performance at epoch 31 -> 0.3276403038801657
+2024-03-05 14:27:40,905 [MainThread  ] [INFO ]  Plateau Reached!
+2024-03-05 14:27:47,456 [MainThread  ] [INFO ]  Validation performance at epoch 41 -> 0.32012107158841197
+2024-03-05 14:28:37,068 [MainThread  ] [INFO ]  Validation performance at epoch 51 -> 0.3197821989392848
+2024-03-05 14:28:37,068 [MainThread  ] [INFO ]  Plateau Reached!
+2024-03-05 14:29:27,051 [MainThread  ] [INFO ]  Validation performance at epoch 61 -> 0.31996892816728145
+2024-03-05 14:29:31,858 [MainThread  ] [INFO ]  Plateau Reached!
+2024-03-05 14:30:17,145 [MainThread  ] [INFO ]  Validation performance at epoch 71 -> 0.3200731133661823
+2024-03-05 14:30:26,750 [MainThread  ] [INFO ]  Plateau Reached!
+2024-03-05 14:31:06,826 [MainThread  ] [INFO ]  Validation performance at epoch 81 -> 0.3200598465045987
+2024-03-05 14:31:16,425 [MainThread  ] [INFO ]  Plateau Reached and no more reduction -> Exiting Loop
+2024-03-05 14:31:16,438 [MainThread  ] [INFO ]  Checking/Download features and labels locally

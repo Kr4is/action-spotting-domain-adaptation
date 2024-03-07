@@ -1,0 +1,86 @@
+2024-03-06 10:02:09,271 [MainThread  ] [INFO ]  Starting main function
+2024-03-06 10:02:09,271 [MainThread  ] [INFO ]  Parameters:
+2024-03-06 10:02:09,271 [MainThread  ] [INFO ]   SoccerNet_path : /mnt/patatas_fritas/soccernet-europe_uefa
+2024-03-06 10:02:09,271 [MainThread  ] [INFO ]         features : ResNET_TF2_PCA512.npy
+2024-03-06 10:02:09,271 [MainThread  ] [INFO ]       max_epochs : 1000
+2024-03-06 10:02:09,271 [MainThread  ] [INFO ]     load_weights : None
+2024-03-06 10:02:09,271 [MainThread  ] [INFO ]       model_name : CALF_europe_uefa
+2024-03-06 10:02:09,271 [MainThread  ] [INFO ]        test_only : False
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]        challenge : False
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]         K_params : None
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]     num_features : 512
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]  chunks_per_epoch : 18000
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]  evaluation_frequency : 20
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]      dim_capsule : 16
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]        framerate : 2
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]       chunk_size : 120
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]  receptive_field : 40
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]     lambda_coord : 5.0
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]     lambda_noobj : 0.5
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]  loss_weight_segmentation : 0.000367
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]  loss_weight_detection : 1.0
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]       batch_size : 32
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]               LR : 0.001
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]         patience : 25
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]              GPU : -1
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]   max_num_worker : 4
+2024-03-06 10:02:09,272 [MainThread  ] [INFO ]         loglevel : INFO
+2024-03-06 10:02:09,274 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-06 10:02:09,274 [MainThread  ] [INFO ]  Pre-compute clips
+2024-03-06 10:02:43,805 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-06 10:02:43,805 [MainThread  ] [INFO ]  Pre-compute clips
+2024-03-06 10:02:55,339 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-06 10:02:55,339 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-06 10:02:55,344 [MainThread  ] [INFO ]  ContextAwareModel(
+  (conv_1): Conv2d(1, 128, kernel_size=(1, 512), stride=(1, 1))
+  (conv_2): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1))
+  (pad_p_1): ZeroPad2d(padding=(0, 0, 5, 6), value=0.0)
+  (pad_p_2): ZeroPad2d(padding=(0, 0, 13, 13), value=0.0)
+  (pad_p_3): ZeroPad2d(padding=(0, 0, 19, 20), value=0.0)
+  (pad_p_4): ZeroPad2d(padding=(0, 0, 39, 40), value=0.0)
+  (conv_p_1): Conv2d(32, 8, kernel_size=(12, 1), stride=(1, 1))
+  (conv_p_2): Conv2d(32, 16, kernel_size=(27, 1), stride=(1, 1))
+  (conv_p_3): Conv2d(32, 32, kernel_size=(40, 1), stride=(1, 1))
+  (conv_p_4): Conv2d(32, 64, kernel_size=(80, 1), stride=(1, 1))
+  (pad_seg): ZeroPad2d(padding=(0, 0, 1, 1), value=0.0)
+  (conv_seg): Conv2d(152, 272, kernel_size=(3, 1), stride=(1, 1))
+  (batch_seg): BatchNorm2d(240, eps=0.001, momentum=0.01, affine=True, track_running_stats=True)
+  (max_pool_spot): MaxPool2d(kernel_size=(3, 1), stride=(2, 1), padding=0, dilation=1, ceil_mode=False)
+  (pad_spot_1): ZeroPad2d(padding=(0, 0, 1, 1), value=0.0)
+  (conv_spot_1): Conv2d(289, 32, kernel_size=(3, 1), stride=(1, 1))
+  (max_pool_spot_1): MaxPool2d(kernel_size=(3, 1), stride=(2, 1), padding=0, dilation=1, ceil_mode=False)
+  (pad_spot_2): ZeroPad2d(padding=(0, 0, 1, 1), value=0.0)
+  (conv_spot_2): Conv2d(32, 16, kernel_size=(3, 1), stride=(1, 1))
+  (max_pool_spot_2): MaxPool2d(kernel_size=(3, 1), stride=(2, 1), padding=0, dilation=1, ceil_mode=False)
+  (conv_conf): Conv2d(464, 30, kernel_size=(1, 1), stride=(1, 1))
+  (conv_class): Conv2d(464, 255, kernel_size=(1, 1), stride=(1, 1))
+  (softmax): Softmax(dim=-1)
+)
+2024-03-06 10:02:55,345 [MainThread  ] [INFO ]  Total number of parameters: 578245
+2024-03-06 10:02:55,345 [MainThread  ] [INFO ]  start training
+2024-03-06 10:13:09,166 [MainThread  ] [INFO ]  Validation performance at epoch 21 -> 0.2759039325144461
+2024-03-06 10:13:15,624 [MainThread  ] [INFO ]  Test performance at epoch 21 -> 0.27855014270825484
+2024-03-06 10:23:02,208 [MainThread  ] [INFO ]  Validation performance at epoch 41 -> 0.285789370588769
+2024-03-06 10:23:08,688 [MainThread  ] [INFO ]  Test performance at epoch 41 -> 0.27671150959427604
+2024-03-06 10:32:48,271 [MainThread  ] [INFO ]  Validation performance at epoch 61 -> 0.29492011525196093
+2024-03-06 10:32:54,731 [MainThread  ] [INFO ]  Test performance at epoch 61 -> 0.3039464207845091
+2024-03-06 10:42:47,297 [MainThread  ] [INFO ]  Validation performance at epoch 81 -> 0.2986423863095657
+2024-03-06 10:42:54,099 [MainThread  ] [INFO ]  Test performance at epoch 81 -> 0.30608864957529797
+2024-03-06 10:52:41,759 [MainThread  ] [INFO ]  Validation performance at epoch 101 -> 0.3164083229775267
+2024-03-06 10:52:48,394 [MainThread  ] [INFO ]  Test performance at epoch 101 -> 0.2936512387860156
+2024-03-06 10:56:43,242 [MainThread  ] [INFO ]  Plateau Reached!
+2024-03-06 11:02:39,660 [MainThread  ] [INFO ]  Validation performance at epoch 121 -> 0.31306833567960896
+2024-03-06 11:09:32,361 [MainThread  ] [INFO ]  Plateau Reached!
+2024-03-06 11:12:29,509 [MainThread  ] [INFO ]  Validation performance at epoch 141 -> 0.32574636886255626
+2024-03-06 11:12:35,976 [MainThread  ] [INFO ]  Test performance at epoch 141 -> 0.30964703522841663
+2024-03-06 11:22:19,978 [MainThread  ] [INFO ]  Validation performance at epoch 161 -> 0.3222102369661043
+2024-03-06 11:22:19,978 [MainThread  ] [INFO ]  Plateau Reached!
+2024-03-06 11:32:06,476 [MainThread  ] [INFO ]  Validation performance at epoch 181 -> 0.3263414522073012
+2024-03-06 11:32:12,907 [MainThread  ] [INFO ]  Test performance at epoch 181 -> 0.314765476437838
+2024-03-06 11:35:09,302 [MainThread  ] [INFO ]  Plateau Reached!
+2024-03-06 11:42:01,811 [MainThread  ] [INFO ]  Validation performance at epoch 201 -> 0.3277302594121498
+2024-03-06 11:42:08,356 [MainThread  ] [INFO ]  Test performance at epoch 201 -> 0.3129652031384184
+2024-03-06 11:47:55,273 [MainThread  ] [INFO ]  Plateau Reached!
+2024-03-06 11:51:54,748 [MainThread  ] [INFO ]  Validation performance at epoch 221 -> 0.32693157995384076
+2024-03-06 12:00:02,108 [MainThread  ] [INFO ]  Plateau Reached and no more reduction -> Exiting Loop
+2024-03-06 12:00:16,600 [MainThread  ] [INFO ]  Total Execution Time is 7087.328771829605 seconds

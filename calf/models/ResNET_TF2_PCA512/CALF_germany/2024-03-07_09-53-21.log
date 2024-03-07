@@ -1,0 +1,97 @@
+2024-03-07 09:53:21,379 [MainThread  ] [INFO ]  Starting main function
+2024-03-07 09:53:21,379 [MainThread  ] [INFO ]  Parameters:
+2024-03-07 09:53:21,379 [MainThread  ] [INFO ]   SoccerNet_path : /mnt/patatas_fritas/soccernet-europe_uefa
+2024-03-07 09:53:21,379 [MainThread  ] [INFO ]         features : ResNET_TF2_PCA512.npy
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]       max_epochs : 1000
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]     load_weights : None
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]       model_name : CALF_germany
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]        test_only : True
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]        challenge : False
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]         K_params : None
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]     num_features : 512
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]  chunks_per_epoch : 18000
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]  evaluation_frequency : 20
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]      dim_capsule : 16
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]        framerate : 2
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]       chunk_size : 120
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]  receptive_field : 40
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]     lambda_coord : 5.0
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]     lambda_noobj : 0.5
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]  loss_weight_segmentation : 0.000367
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]  loss_weight_detection : 1.0
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]       batch_size : 32
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]               LR : 0.001
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]         patience : 25
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]              GPU : -1
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]   max_num_worker : 4
+2024-03-07 09:53:21,380 [MainThread  ] [INFO ]         loglevel : INFO
+2024-03-07 09:53:21,381 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-07 09:53:21,387 [MainThread  ] [INFO ]  ContextAwareModel(
+  (conv_1): Conv2d(1, 128, kernel_size=(1, 512), stride=(1, 1))
+  (conv_2): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1))
+  (pad_p_1): ZeroPad2d(padding=(0, 0, 5, 6), value=0.0)
+  (pad_p_2): ZeroPad2d(padding=(0, 0, 13, 13), value=0.0)
+  (pad_p_3): ZeroPad2d(padding=(0, 0, 19, 20), value=0.0)
+  (pad_p_4): ZeroPad2d(padding=(0, 0, 39, 40), value=0.0)
+  (conv_p_1): Conv2d(32, 8, kernel_size=(12, 1), stride=(1, 1))
+  (conv_p_2): Conv2d(32, 16, kernel_size=(27, 1), stride=(1, 1))
+  (conv_p_3): Conv2d(32, 32, kernel_size=(40, 1), stride=(1, 1))
+  (conv_p_4): Conv2d(32, 64, kernel_size=(80, 1), stride=(1, 1))
+  (pad_seg): ZeroPad2d(padding=(0, 0, 1, 1), value=0.0)
+  (conv_seg): Conv2d(152, 272, kernel_size=(3, 1), stride=(1, 1))
+  (batch_seg): BatchNorm2d(240, eps=0.001, momentum=0.01, affine=True, track_running_stats=True)
+  (max_pool_spot): MaxPool2d(kernel_size=(3, 1), stride=(2, 1), padding=0, dilation=1, ceil_mode=False)
+  (pad_spot_1): ZeroPad2d(padding=(0, 0, 1, 1), value=0.0)
+  (conv_spot_1): Conv2d(289, 32, kernel_size=(3, 1), stride=(1, 1))
+  (max_pool_spot_1): MaxPool2d(kernel_size=(3, 1), stride=(2, 1), padding=0, dilation=1, ceil_mode=False)
+  (pad_spot_2): ZeroPad2d(padding=(0, 0, 1, 1), value=0.0)
+  (conv_spot_2): Conv2d(32, 16, kernel_size=(3, 1), stride=(1, 1))
+  (max_pool_spot_2): MaxPool2d(kernel_size=(3, 1), stride=(2, 1), padding=0, dilation=1, ceil_mode=False)
+  (conv_conf): Conv2d(464, 30, kernel_size=(1, 1), stride=(1, 1))
+  (conv_class): Conv2d(464, 255, kernel_size=(1, 1), stride=(1, 1))
+  (softmax): Softmax(dim=-1)
+)
+2024-03-07 09:53:21,387 [MainThread  ] [INFO ]  Total number of parameters: 578245
+2024-03-07 09:53:28,826 [MainThread  ] [INFO ]  Metric: loose
+2024-03-07 09:53:28,827 [MainThread  ] [INFO ]                        Any    Visible    Unseen
+------------------  -----  ---------  --------
+Penalty              0          0         0
+Kick-off            10.87      19.3      11.42
+Goal                30.24      31.47      0
+Substitution        20.99      25.3       3.51
+Offside              3.17       3.9       0
+Shots on target     17.58      17.58      0
+Shots off target     4.48       4.58      0
+Clearance           24.97      30.24     17.29
+Ball out of play    38.13      38.93     30.74
+Throw-in            26.84      32.52     17.51
+Foul                30.27      30.3      39.81
+Indirect free-kick  25.26      28.97     25.59
+Direct free-kick     7.68      12.11      0
+Corner              30.41      29.93     34.71
+Yellow card         19.41      20.74      1.16
+Red card             0          0         0
+Yellow->red card     0          0         0
+Average mAP         17.08      19.17     13.98
+2024-03-07 09:53:31,274 [MainThread  ] [INFO ]  Metric: tight
+2024-03-07 09:53:31,275 [MainThread  ] [INFO ]                        Any    Visible    Unseen
+------------------  -----  ---------  --------
+Penalty              0          0         0
+Kick-off             2.63       9.09      2.14
+Goal                 7.87       8.21      0
+Substitution         6.82       7.17      0.16
+Offside              1.09       1.21      0
+Shots on target      5.7        5.7       0
+Shots off target     3.03       3.03      0
+Clearance            8.04       8.15      4.08
+Ball out of play    12.48      12.62      4.85
+Throw-in             9.58       9.94      2.48
+Foul                 7.27       7.28      5.97
+Indirect free-kick   4.08       8.82      4.09
+Direct free-kick     3.81       7.39      0
+Corner               8.65       8.03     20.45
+Yellow card          4.43       4.48      0
+Red card             0          0         0
+Yellow->red card     0          0         0
+Average mAP          5.03       5.95      3.4
+2024-03-07 09:53:36,149 [MainThread  ] [INFO ]  Total Execution Time is 14.769805431365967 seconds

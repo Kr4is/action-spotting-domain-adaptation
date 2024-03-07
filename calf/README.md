@@ -72,9 +72,18 @@
     <td>4.11</td>
     <td>5.81</td>
     <td>7.16</td>
-    <td>3.81<br></td>
+    <td>3.81</td>
     <td>4.67</td>
     <td>8.22</td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>13.71</td>
+    <td>15.83</td>
+    <td>15.66</td>
+    <td>15.49</td>
+    <td>13.19</td>
+    <td>15.44</td>
   </tr>
 </tbody>
 </table>
@@ -147,9 +156,18 @@
     <td>19.77</td>
     <td>24.9</td>
     <td>28.44</td>
-    <td>21.5<br></td>
+    <td>21.5</td>
     <td>22.81</td>
     <td>31.09</td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>41.53</td>
+    <td>43.51</td>
+    <td>44.14</td>
+    <td>43.22</td>
+    <td>43.03</td>
+    <td>41.54</td>
   </tr>
 </tbody>
 </table>

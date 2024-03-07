@@ -2,6 +2,186 @@
 
 ## Results
 
+### Soccernet cross validation
+
+### Max Pooling
+
+##### Tight Average mAP
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Train</th>
+    <th colspan="6">Test</th>
+  </tr>
+  <tr>
+    <th>England EPL</th>
+    <th>Europe UEFA</th>
+    <th>France Ligue 1</th>
+    <th>Germany Bundesliga</th>
+    <th>Italy Serie A</th>
+    <th>Spain La Liga</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>England EPL</td>
+    <td>2.56</td>
+    <td>1.64</td>
+    <td>2.46</td>
+    <td>1.86</td>
+    <td>1.2</td>
+    <td>2.21</td>
+  </tr>
+  <tr>
+    <td>Europe UEFA</td>
+    <td>1.71</td>
+    <td>3.13</td>
+    <td>3.33</td>
+    <td>1.86</td>
+    <td>1.9</td>
+    <td>2.85</td>
+  </tr>
+  <tr>
+    <td>France Ligue 1</td>
+    <td>1.65</td>
+    <td>1.6</td>
+    <td>3.3</td>
+    <td>1.51</td>
+    <td>1.13</td>
+    <td>1.85</td>
+  </tr>
+  <tr>
+    <td>Germany Bundesliga</td>
+    <td>1.26</td>
+    <td>1.48</td>
+    <td>1.55</td>
+    <td>2.47</td>
+    <td>0.97</td>
+    <td>1.46</td>
+  </tr>
+  <tr>
+    <td>Italy Serie A</td>
+    <td>1.34</td>
+    <td>1.98</td>
+    <td>1.49</td>
+    <td>1.66</td>
+    <td>2.76</td>
+    <td>2.03</td>
+  </tr>
+  <tr>
+    <td>Spain La Liga</td>
+    <td>1.42</td>
+    <td>1.64</td>
+    <td>1.72</td>
+    <td>1.8</td>
+    <td>1.73</td>
+    <td>2.88</td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>2.71</td>
+    <td>2.75</td>
+    <td>3.7</td>
+    <td>2.66</td>
+    <td>2.54</td>
+    <td>2.98</td>
+  </tr>
+</tbody>
+</table>
+
+##### Loose Average mAP
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Train</th>
+    <th colspan="6">Test</th>
+  </tr>
+  <tr>
+    <th>England EPL</th>
+    <th>Europe UEFA</th>
+    <th>France Ligue 1</th>
+    <th>Germany Bundesliga</th>
+    <th>Italy Serie A</th>
+    <th>Spain La Liga</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>England EPL</td>
+    <td>15.87</td>
+    <td>12.02</td>
+    <td>15.97</td>
+    <td>10.55</td>
+    <td>11.45</td>
+    <td>9.3</td>
+  </tr>
+  <tr>
+    <td>Europe UEFA</td>
+    <td>11.2</td>
+    <td>16.94</td>
+    <td>17.86</td>
+    <td>13.28</td>
+    <td>12.36</td>
+    <td>10.66</td>
+  </tr>
+  <tr>
+    <td>France Ligue 1</td>
+    <td>9.81</td>
+    <td>11.77</td>
+    <td>25.99</td>
+    <td>10.47</td>
+    <td>10.49</td>
+    <td>9.12</td>
+  </tr>
+  <tr>
+    <td>Germany Bundesliga</td>
+    <td>9.04</td>
+    <td>11.29</td>
+    <td>13.88</td>
+    <td>16.86</td>
+    <td>10.84</td>
+    <td>7.98</td>
+  </tr>
+  <tr>
+    <td>Italy Serie A</td>
+    <td>9.67</td>
+    <td>10.79</td>
+    <td>15.56</td>
+    <td>10.87</td>
+    <td>19.05</td>
+    <td>10.22</td>
+  </tr>
+  <tr>
+    <td>Spain La Liga</td>
+    <td>9.75</td>
+    <td>13.22</td>
+    <td>15.28</td>
+    <td>10.95</td>
+    <td>11.61</td>
+    <td>16.86</td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>17.7</td>
+    <td>21.28</td>
+    <td>26.6</td>
+    <td>21.31</td>
+    <td>20.17</td>
+    <td>19.1</td>
+  </tr>
+</tbody>
+</table>
+
+### NetVLAD
+
+##### Tight Average mAP
+
+##### Loose Average mAP
+
+### Domain adaptation
+
 <table>
 <thead>
   <tr>
@@ -73,45 +253,73 @@ You should have generated the ResNET reduced features (PCA).
 ### Max Polling
 
 ```bash
+model_name=MAXPOOL_v2
 dataset_path=/path/to/dataset/test
 
 python src/main.py \
     --SoccerNet_path=$dataset_path \
     --features=ResNET_TF2_PCA512.npy \
     --num_features=512 \
-    --model_name=MAXPOOL_v2 \
+    --model_name=$model_name \
     --version 2 \
     --batch_size 256 \
     --chunk_size 20 \
-    --patience 10 \
-    --evaluation_frequency=10 \
     --pool=MAX \
     --NMS_threshold 0.0 \
-    --split_train train \
-    --split_valid valid \
-    --split_test test \
     --test_only
 ```
 
 ### NetVLAD
 
 ```bash
+model_name=NETVLAD_v2
 dataset_path=/path/to/dataset/test
 
 python src/main.py \
     --SoccerNet_path=$dataset_path \
     --features=ResNET_TF2_PCA512.npy \
     --num_features=512 \
-    --model_name=NETVLAD_v2 \
+    --model_name=$model_name \
     --version 2 \
     --batch_size 256 \
     --chunk_size 20 \
-    --patience 10 \
-    --evaluation_frequency=10 \
     --pool=NetVLAD \
     --NMS_threshold 0.5 \
-    --split_train train \
-    --split_valid valid \
-    --split_test test \
     --test_only
+```
+
+## Training
+
+To train a model launch the following command:
+
+### Max Polling
+
+```bash
+model_name=MAXPOOL_v2_england
+dataset_path=/path/to/dataset/test
+
+python src/main.py \
+    --SoccerNet_path=$dataset_path \
+    --features=ResNET_TF2_PCA512.npy \
+    --model_name=$model_name \
+    --batch_size 256 \
+    --chunk_size 20 \
+    --pool=MAX \
+    --NMS_threshold 0.0
+```
+
+### NetVLAD
+
+```bash
+model_name=NETVLAD_v2_england
+dataset_path=/path/to/dataset/test
+
+python src/main.py \
+    --SoccerNet_path=$dataset_path \
+    --features=ResNET_TF2_PCA512.npy \
+    --model_name=$model_name \
+    --batch_size 256 \
+    --chunk_size 20 \
+    --pool=NetVLAD \
+    --NMS_threshold 0.5
 ```

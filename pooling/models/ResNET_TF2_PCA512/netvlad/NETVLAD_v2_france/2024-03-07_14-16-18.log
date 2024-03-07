@@ -1,0 +1,87 @@
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]  Starting main function
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]  Parameters:
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]   SoccerNet_path : /mnt/patatas_fritas/soccernet-europe_uefa
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]         features : ResNET_TF2_PCA512.npy
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]       max_epochs : 1000
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]     load_weights : None
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]       model_name : NETVLAD_v2_france
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]        test_only : True
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]      split_train : ['train']
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]      split_valid : ['valid']
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]       split_test : ['test']
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]          version : 2
+2024-03-07 14:16:18,736 [MainThread  ] [INFO ]     num_features : 512
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]  evaluation_frequency : 10
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]        framerate : 2
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]       chunk_size : 20
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]             pool : NetVLAD
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]       NMS_window : 20
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]    NMS_threshold : 0.5
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]       batch_size : 256
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]               LR : 0.001
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]              LRe : 1e-06
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]         patience : 10
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]              GPU : -1
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]   max_num_worker : 4
+2024-03-07 14:16:18,737 [MainThread  ] [INFO ]         loglevel : INFO
+2024-03-07 14:16:18,738 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-07 14:16:20,313 [MainThread  ] [INFO ]  Model(
+  (pool_layer): NetVLAD(
+    (conv): Conv2d(512, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  )
+  (fc): Linear(in_features=32768, out_features=18, bias=True)
+  (drop): Dropout(p=0.4, inplace=False)
+  (sigm): Sigmoid()
+)
+2024-03-07 14:16:20,314 [MainThread  ] [INFO ]  Total number of parameters: 655378
+2024-03-07 14:16:20,318 [MainThread  ] [INFO ]  Checking/Download features and labels locally
+2024-03-07 14:16:53,973 [MainThread  ] [INFO ]  Metric: loose
+2024-03-07 14:16:53,974 [MainThread  ] [INFO ]                        Any    Visible    Unseen
+------------------  -----  ---------  --------
+Penalty              0          0         0
+Kick-off            23.87      35.1      19.53
+Goal                 8.26       8.26      0
+Substitution        52.17      57.77     29.45
+Offside              0          0         0
+Shots on target      9.09       9.09      0
+Shots off target     8.18       8.18      0
+Clearance            1.03       1.03      0
+Ball out of play    20.09      20.29     22.57
+Throw-in            18.7       21.48     11.48
+Foul                14.1       14.11      0
+Indirect free-kick   0          0         0
+Direct free-kick     0          0         0
+Corner               8.41       8.41      8.68
+Yellow card          0          0         0
+Red card             0          0         0
+Yellow->red card     0          0         0
+Average mAP          9.64      10.81      7.05
+2024-03-07 14:16:56,171 [MainThread  ] [INFO ]  Metric: tight
+2024-03-07 14:16:56,172 [MainThread  ] [INFO ]                        Any    Visible    Unseen
+------------------  -----  ---------  --------
+Penalty              0          0         0
+Kick-off            11.31      22.29      9.34
+Goal                 2.46       2.46      0
+Substitution         7.36       7.45      8.23
+Offside              0          0         0
+Shots on target      9.09       9.09      0
+Shots off target     2.05       2.05      0
+Clearance            0          0         0
+Ball out of play     1.89       1.98      2.19
+Throw-in             2.28       2.62      2.56
+Foul                 8.14       8.14      0
+Indirect free-kick   0          0         0
+Direct free-kick     0          0         0
+Corner               2.34       2.34      0
+Yellow card          0          0         0
+Red card             0          0         0
+Yellow->red card     0          0         0
+Average mAP          2.76       3.44      1.72
+2024-03-07 14:16:56,173 [MainThread  ] [INFO ]  Best Performance at end of training 
+2024-03-07 14:16:56,173 [MainThread  ] [INFO ]  a_mAP visibility all: 0.027603117735505143
+2024-03-07 14:16:56,173 [MainThread  ] [INFO ]  a_mAP visibility all per class: [0.0, 0.1131472693972694, 0.02462121212121212, 0.07362011698312007, 0.0, 0.09090909090909091, 0.020454545454545454, 0.0, 0.018914599332555987, 0.022839375059001226, 0.08138820638820639, 0.0, 0.0, 0.023358585858585856, 0.0, 0.0, 0.0]
+2024-03-07 14:16:56,173 [MainThread  ] [INFO ]  a_mAP visibility visible: 0.034361147588620716
+2024-03-07 14:16:56,173 [MainThread  ] [INFO ]  a_mAP visibility visible per class: [0.0, 0.22291666666666665, 0.02462121212121212, 0.07445246957343732, 0.0, 0.09090909090909091, 0.020454545454545454, 0.0, 0.019811975836460372, 0.026226756198347106, 0.08138820638820639, 0.0, 0.0, 0.023358585858585856, 0.0, 0.0, 0.0]
+2024-03-07 14:16:56,173 [MainThread  ] [INFO ]  a_mAP visibility unshown: 0.017166685159407426
+2024-03-07 14:16:56,173 [MainThread  ] [INFO ]  a_mAP visibility unshown per class: [0.0, 0.09340354767184035, 0.0, 0.08232323232323233, 0.0, 0.0, 0.0, 0.0, 0.02187194525904203, 0.025568181818181816, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+2024-03-07 14:16:56,173 [MainThread  ] [INFO ]  Total Execution Time is 37.43731141090393 seconds

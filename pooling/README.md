@@ -178,7 +178,171 @@
 
 ##### Tight Average mAP
 
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Train</th>
+    <th colspan="6">Test</th>
+  </tr>
+  <tr>
+    <th>England EPL</th>
+    <th>Europe UEFA</th>
+    <th>France Ligue 1</th>
+    <th>Germany Bundesliga</th>
+    <th>Italy Serie A</th>
+    <th>Spain La Liga</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>England EPL</td>
+    <td>3.82</td>
+    <td>2.24</td>
+    <td>3.21</td>
+    <td>3</td>
+    <td>1.76</td>
+    <td>2.29</td>
+  </tr>
+  <tr>
+    <td>Europe UEFA</td>
+    <td>3.09</td>
+    <td>4.24</td>
+    <td>3.43</td>
+    <td>3.83</td>
+    <td>2.27</td>
+    <td>3.12</td>
+  </tr>
+  <tr>
+    <td>France Ligue 1</td>
+    <td>1.75</td>
+    <td>2.76</td>
+    <td>5.01</td>
+    <td>1.69</td>
+    <td>0.68</td>
+    <td>2.66</td>
+  </tr>
+  <tr>
+    <td>Germany Bundesliga</td>
+    <td>2.26</td>
+    <td>4.4</td>
+    <td>4.19</td>
+    <td>3.76</td>
+    <td>1.9</td>
+    <td>2.79</td>
+  </tr>
+  <tr>
+    <td>Italy Serie A</td>
+    <td>2.4</td>
+    <td>3.26</td>
+    <td>3.86</td>
+    <td>2.54</td>
+    <td>4.39</td>
+    <td>2.5</td>
+  </tr>
+  <tr>
+    <td>Spain La Liga</td>
+    <td>1.65</td>
+    <td>2.59</td>
+    <td>4.13</td>
+    <td>2.74</td>
+    <td>2.66</td>
+    <td>4.37</td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>3.41</td>
+    <td>3.96</td>
+    <td>5.57</td>
+    <td>4.65</td>
+    <td>4.6</td>
+    <td>4.81</td>
+  </tr>
+</tbody>
+</table>
+
 ##### Loose Average mAP
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Train</th>
+    <th colspan="6">Test</th>
+  </tr>
+  <tr>
+    <th>England EPL</th>
+    <th>Europe UEFA</th>
+    <th>France Ligue 1</th>
+    <th>Germany Bundesliga</th>
+    <th>Italy Serie A</th>
+    <th>Spain La Liga</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>England EPL</td>
+    <td>24.02</td>
+    <td>18.23</td>
+    <td>16.16</td>
+    <td>12.83</td>
+    <td>9.65</td>
+    <td>12.65</td>
+  </tr>
+  <tr>
+    <td>Europe UEFA</td>
+    <td>13.27</td>
+    <td>23.96</td>
+    <td>22.38</td>
+    <td>17.32</td>
+    <td>11.75</td>
+    <td>15.86</td>
+  </tr>
+  <tr>
+    <td>France Ligue 1</td>
+    <td>5.51</td>
+    <td>9.64</td>
+    <td>23.7</td>
+    <td>6.64</td>
+    <td>3.67</td>
+    <td>6.58</td>
+  </tr>
+  <tr>
+    <td>Germany Bundesliga</td>
+    <td>10.18</td>
+    <td>14.03</td>
+    <td>13.23</td>
+    <td>23.49</td>
+    <td>9.17</td>
+    <td>8.55</td>
+  </tr>
+  <tr>
+    <td>Italy Serie A</td>
+    <td>10.85</td>
+    <td>14</td>
+    <td>14.91</td>
+    <td>13.37</td>
+    <td>26.1</td>
+    <td>11.26</td>
+  </tr>
+  <tr>
+    <td>Spain La Liga</td>
+    <td>9.76</td>
+    <td>14.47</td>
+    <td>13.84</td>
+    <td>11.54</td>
+    <td>12.15</td>
+    <td>23.47</td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>29.9</td>
+    <td>34.56</td>
+    <td>39.73</td>
+    <td>30.63</td>
+    <td>32.56</td>
+    <td>30.86</td>
+  </tr>
+</tbody>
+</table>
 
 ### Domain adaptation
 

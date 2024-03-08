@@ -126,6 +126,485 @@
 </tbody>
 </table>
 
+## Soccernet partitions classes
+
+### Train
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Soccernet<br><br>Partition<br></th>
+    <th colspan="18">Train Classes</th>
+  </tr>
+  <tr>
+    <th>Ball out of play</th>
+    <th>Clearance</th>
+    <th>Corner</th>
+    <th>Direct free-kick</th>
+    <th>Foul</th>
+    <th>Goal</th>
+    <th>Indirect free-kick</th>
+    <th>Kick-off</th>
+    <th>Offside</th>
+    <th>Penalty</th>
+    <th>Red card</th>
+    <th>Shots off target</th>
+    <th>Shots on target</th>
+    <th>Substitution</th>
+    <th>Throw-in</th>
+    <th>Yellow card</th>
+    <th>Yellow-&gt;red card</th>
+    <th>Total</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>England EPL</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td>Europe UEFA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>France Ligue 1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Germany Bundesliga</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Italy Serie A</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Spain La Liga</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+### Valid
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Soccernet<br><br>Partition<br></th>
+    <th colspan="18">Valid Classes</th>
+  </tr>
+  <tr>
+    <th>Ball out of play</th>
+    <th>Clearance</th>
+    <th>Corner</th>
+    <th>Direct free-kick</th>
+    <th>Foul</th>
+    <th>Goal</th>
+    <th>Indirect free-kick</th>
+    <th>Kick-off</th>
+    <th>Offside</th>
+    <th>Penalty</th>
+    <th>Red card</th>
+    <th>Shots off target</th>
+    <th>Shots on target</th>
+    <th>Substitution</th>
+    <th>Throw-in</th>
+    <th>Yellow card</th>
+    <th>Yellow-&gt;red card</th>
+    <th>Total</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>England EPL</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>-</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td>Europe UEFA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>France Ligue 1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Germany Bundesliga</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Italy Serie A</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Spain La Liga</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+### Test
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Soccernet<br><br>Partition<br></th>
+    <th colspan="18">Test Classes</th>
+  </tr>
+  <tr>
+    <th>Ball out of play</th>
+    <th>Clearance</th>
+    <th>Corner</th>
+    <th>Direct free-kick</th>
+    <th>Foul</th>
+    <th>Goal</th>
+    <th>Indirect free-kick</th>
+    <th>Kick-off</th>
+    <th>Offside</th>
+    <th>Penalty</th>
+    <th>Red card</th>
+    <th>Shots off target</th>
+    <th>Shots on target</th>
+    <th>Substitution</th>
+    <th>Throw-in</th>
+    <th>Yellow card</th>
+    <th>Yellow-&gt;red card</th>
+    <th>Total</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>England EPL</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td>Europe UEFA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>France Ligue 1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Germany Bundesliga</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Italy Serie A</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Spain La Liga</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
 ## Baseline Results
 
 <table>

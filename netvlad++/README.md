@@ -246,7 +246,7 @@ model="NetVLAD++" # Model name
 dataset_path=/path/to/dataset
 
 python src/main.py \
-    --SoccerNet_path=$dataset_path_test \
+    --SoccerNet_path=$dataset_path \
     --model_name=$model \
     --test_only
 ```

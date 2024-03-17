@@ -161,7 +161,7 @@ model_path=/path/to/spot/model
 dataset_path=/path/to/dataset/test
 
 python eval_soccernetv2.py \
-    $model_path \
+    $model_dir \
     -s $split \
-    -l $dataset_path
+    -l $dataset_folder
 ```
